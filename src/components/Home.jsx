@@ -8,10 +8,10 @@ function Home() {
       <section className="hero-shell">
         <div className="container hero">
           <div className="hero-main">
-            <p className="hero-kicker">4<sup>th</sup> International Conference</p>
+            <p className="hero-kicker">4<sup>th</sup> International Conference on</p>
             <h1 className="hero-title">
               Mathematical Analysis &amp;{" "}
-              <span className="hero-gradient">Advanced Modelling</span>
+              <span className="hero-gradient">Applications in Modelling</span>
             </h1>
             <p className="hero-meta">
               12 – 14 October 2026 · Jadavpur University, Kolkata, India
@@ -19,7 +19,7 @@ function Home() {
             <p className="hero-lead">
               A focused meeting for researchers working at the interface of
               analysis, modelling, and complex systems — with applications to
-              biology, epidemiology, engineering and the physical sciences.
+              biology, epidemiology, engineering, and the physical sciences.
             </p>
 
             <div className="hero-actions">
