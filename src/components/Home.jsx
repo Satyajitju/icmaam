@@ -14,7 +14,7 @@ function Home() {
               <span className="hero-gradient">Advanced Modelling</span>
             </h1>
             <p className="hero-meta">
-              12 – 14 October 2023 · Jadavpur University, Kolkata, India
+              12 – 14 October 2026 · Jadavpur University, Kolkata, India
             </p>
             <p className="hero-lead">
               A focused meeting for researchers working at the interface of
