@@ -33,14 +33,12 @@ function Home() {
 
             <div className="hero-pills">
               <div className="hero-pill">
-                <span className="hero-pill-label">Mode</span>
-                <span className="hero-pill-value">In-person · On campus</span>
+                <span className="hero-pill-label">Edition</span>
+                <span className="hero-pill-value">4th ICMAAM (2026)</span>
               </div>
               <div className="hero-pill">
-                <span className="hero-pill-label">Proceedings</span>
-                <span className="hero-pill-value">
-                  Selected papers in Springer Proceedings
-                </span>
+                <span className="hero-pill-label">Mode</span>
+                <span className="hero-pill-value">In-person · On campus</span>
               </div>
             </div>
           </div>
@@ -68,7 +66,7 @@ function Home() {
                 <li>Sessions for early-career researchers and students</li>
               </ul>
               <p className="hero-aside-foot">
-                You can refine this block with final statistics and highlights.
+                Update this block with final statistics and highlights for the 4th edition.
               </p>
             </div>
           </aside>
@@ -81,7 +79,7 @@ function Home() {
           <div className="section-header">
             <h2>Scientific Themes</h2>
             <p className="section-sub">
-              Adapt or extend these areas according to the actual scope of the conference.
+              Adapt or extend these areas according to the actual scope of the 4th ICMAAM.
             </p>
           </div>
           <div className="theme-grid">
@@ -129,7 +127,7 @@ function Home() {
           <div className="section-header">
             <h2>Important Dates</h2>
             <p className="section-sub">
-              Final timeline of the conference will be updated soon.
+              Replace placeholders with the final timeline for ICMAAM 2026.
             </p>
           </div>
           <div className="timeline">
@@ -159,7 +157,7 @@ function Home() {
               <div className="timeline-body">
                 <div className="timeline-label">Conference dates</div>
                 <div className="timeline-text">
-                  09 – 11 October 2023 · Jadavpur University
+                  12 – 14 October 2026 · Jadavpur University, Kolkata
                 </div>
               </div>
             </div>
@@ -173,8 +171,8 @@ function Home() {
           <div>
             <h2>Explore the conference</h2>
             <p className="section-sub">
-              Use the links below to quickly access detailed information already
-              available in other pages of the website.
+              Use the links below to quickly access detailed information available
+              on other pages of the website.
             </p>
           </div>
           <div className="section-card">
