@@ -1,16 +1,14 @@
-import React, { Component } from 'react'
-import Caraousel from './Caraousel5'
-import RegistrationDet from './RegistrationDet'
+// src/components/Registration.jsx
+import Caraousel from "./Caraousel5";
+import RegistrationDet from "./RegistrationDet";
 
-export class Registration extends Component {
-  render() {
-    return (
-      <div>
-        <Caraousel />
-        <RegistrationDet />
-      </div>
-    )
-  }
+function Registration() {
+  return (
+    <div>
+      <Caraousel />
+      <RegistrationDet />
+    </div>
+  );
 }
 
-export default Registration
+export default Registration;
