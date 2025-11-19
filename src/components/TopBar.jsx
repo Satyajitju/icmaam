@@ -1,14 +1,10 @@
 // src/components/TopBar.jsx
-
+import logo from "../assets/logo_ju.jpg"; 
 function TopBar() {
   return (
     <div className="top-strip">
       <div className="top-strip-left">
-        <img
-          src="https://static.wixstatic.com/media/485cee_46bfcf61e1fe4cc78cf03373aaef256a~mv2.gif"
-          alt="Conference Logo"
-          className="top-strip-logo"
-        />
+        <img src={logo} alt="ICMAAM Logo" className="top-strip-logo" />
         <div className="top-strip-info">
           <span className="top-strip-date">12–14 October 2026</span>
           <span className="top-strip-location">Kolkata, India</span>
