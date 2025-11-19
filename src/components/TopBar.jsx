@@ -1,23 +1,31 @@
-import React, { Component } from 'react'
+// src/components/TopBar.jsx
 
-export class TopBar extends Component {
-  render() {
-    return (
-      <div className='d-flex flex-lg-row flex-md-row flex-sm-row flex-column text-center m-4' style={{backgroundColor: '#d2d5d9'}}>
-        <div className='g-col-4 m-2'>
-            <img src="https://static.wixstatic.com/media/485cee_46bfcf61e1fe4cc78cf03373aaef256a~mv2.gif" alt=""/>
-            <p style={{fontSize: 20}}>9-11 October, 2023</p>
-            <p style={{fontSize: 18}}>Kolkata, India</p>
-        </div>
-        <div className='g-col-8 m-auto p-2'>
-            <p style={{color: 'red', fontSize: 25, fontWeight: 'bold'}}>2nd International Conference on Mathematical Analysis and Applications in Modeling</p>
-            <p style={{color: 'red', fontSize: 25, fontWeight: 'bold'}}>(ICMAAM 2023)</p>
-            <p style={{fontSize: 18}}>Organised By
-            Department of Mathematics, Jadavpur University & Center for Mathematical Biology and Ecology</p>
+function TopBar() {
+  return (
+    <div className="top-strip">
+      <div className="top-strip-left">
+        <img
+          src="https://static.wixstatic.com/media/485cee_46bfcf61e1fe4cc78cf03373aaef256a~mv2.gif"
+          alt="Conference Logo"
+          className="top-strip-logo"
+        />
+        <div className="top-strip-info">
+          <span className="top-strip-date">9–11 October 2023</span>
+          <span className="top-strip-location">Kolkata, India</span>
         </div>
       </div>
-    )
-  }
+
+      <div className="top-strip-right">
+        <div className="top-strip-title">
+          2nd International Conference on Mathematical Analysis and Applications in Modelling
+        </div>
+        <div className="top-strip-sub">(ICMAAM 2023)</div>
+        <div className="top-strip-org">
+          Organised by the Department of Mathematics &amp; Centre for Mathematical Biology and Ecology, Jadavpur University
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default TopBar
+export default TopBar;
