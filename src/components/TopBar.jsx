@@ -1,10 +1,14 @@
 // src/components/TopBar.jsx
-import logo from "../assets/logo_ju.jpeg"; 
+
 function TopBar() {
   return (
     <div className="top-strip">
       <div className="top-strip-left">
-        <img src={logo} alt="ICMAAM Logo" className="top-strip-logo" />
+        <img
+          src="/logo_ju.jpeg"
+          alt="ICMAAM Logo"
+          className="top-strip-logo"
+        />
         <div className="top-strip-info">
           <span className="top-strip-date">12–14 October 2026</span>
           <span className="top-strip-location">Kolkata, India</span>
