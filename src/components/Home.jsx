@@ -8,7 +8,7 @@ function Home() {
       <section className="hero-shell">
         <div className="container hero">
           <div className="hero-main">
-            <p className="hero-kicker">4th International Conference</p>
+            <p className="hero-kicker">4<sup>th</sup> International Conference</p>
             <h1 className="hero-title">
               Mathematical Analysis &amp;{" "}
               <span className="hero-gradient">Advanced Modelling</span>
@@ -34,7 +34,7 @@ function Home() {
             <div className="hero-pills">
               <div className="hero-pill">
                 <span className="hero-pill-label">Edition</span>
-                <span className="hero-pill-value">4th ICMAAM (2026)</span>
+                <span className="hero-pill-value">4<sup>th</sup> ICMAAM (2026)</span>
               </div>
               <div className="hero-pill">
                 <span className="hero-pill-label">Mode</span>
@@ -48,25 +48,25 @@ function Home() {
               <p className="hero-aside-label">Conference snapshot</p>
               <div className="hero-stats">
                 <div className="hero-stat">
-                  <div className="hero-stat-number">3</div>
+                  <div className="hero-stat-number">250+</div>
                   <div className="hero-stat-label">Days</div>
                 </div>
                 <div className="hero-stat">
-                  <div className="hero-stat-number">6+</div>
+                  <div className="hero-stat-number">Update Soon</div>
                   <div className="hero-stat-label">Plenary talks</div>
                 </div>
                 <div className="hero-stat">
-                  <div className="hero-stat-number">100+</div>
+                  <div className="hero-stat-number">500+</div>
                   <div className="hero-stat-label">Contributions</div>
                 </div>
               </div>
               <ul className="hero-aside-list">
                 <li>High-quality invited and contributed talks</li>
                 <li>Special emphasis on mathematical biology &amp; epidemiology</li>
-                <li>Sessions for early-career researchers and students</li>
+                <li>Sessions for young scientists, early-career researchers, and students </li>
               </ul>
               <p className="hero-aside-foot">
-                Update this block with final statistics and highlights for the 4th edition.
+                Final statistics and highlights for the 4th edition will be updated soon.
               </p>
             </div>
           </aside>
@@ -74,7 +74,7 @@ function Home() {
       </section>
 
       {/* Themes / quick links */}
-      <section className="section section-alt">
+      <section className=" section section-alt">
         <div className="container">
           <div className="section-header">
             <h2>Scientific Themes</h2>
@@ -127,7 +127,7 @@ function Home() {
           <div className="section-header">
             <h2>Important Dates</h2>
             <p className="section-sub">
-              Replace placeholders with the final timeline for ICMAAM 2026.
+              The final timeline for ICMAAM 2026 will be available soon.
             </p>
           </div>
           <div className="timeline">
@@ -135,21 +135,21 @@ function Home() {
               <div className="timeline-dot" />
               <div className="timeline-body">
                 <div className="timeline-label">Abstract submission</div>
-                <div className="timeline-text">[Insert deadline]</div>
+                <div className="timeline-text">[]</div>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-dot" />
               <div className="timeline-body">
                 <div className="timeline-label">Notification of acceptance</div>
-                <div className="timeline-text">[Insert date]</div>
+                <div className="timeline-text">[]</div>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-dot" />
               <div className="timeline-body">
                 <div className="timeline-label">Full paper submission</div>
-                <div className="timeline-text">[Insert date]</div>
+                <div className="timeline-text">[]</div>
               </div>
             </div>
             <div className="timeline-item active">
