@@ -1,5 +1,5 @@
 // src/components/TopBar.jsx
-import logo from "../assets/logo_ju.jpg"; 
+import logo from "../assets/logo_ju.jpeg"; 
 function TopBar() {
   return (
     <div className="top-strip">
