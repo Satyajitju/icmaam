@@ -10,6 +10,87 @@
   --shadow-strong: 0 24px 60px rgba(15, 23, 42, 0.9);
   --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.7);
 }
+/* ---- Modern Top Strip Styling ---- */
+
+.top-strip {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(14px);
+}
+
+.top-strip-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.top-strip-logo {
+  height: 52px;
+  width: auto;
+  border-radius: 6px;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4));
+}
+
+.top-strip-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.top-strip-date {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.top-strip-location {
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.top-strip-right {
+  text-align: right;
+  max-width: 60%;
+}
+
+.top-strip-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+
+.top-strip-sub {
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #6366f1, #22c55e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.top-strip-org {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.2rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .top-strip {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .top-strip-right {
+    max-width: 100%;
+    text-align: center;
+  }
+}
 
 *,
 *::before,
