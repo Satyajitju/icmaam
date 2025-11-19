@@ -48,7 +48,7 @@ function Home() {
               <p className="hero-aside-label">Conference snapshot</p>
               <div className="hero-stats">
                 <div className="hero-stat">
-                  <div className="hero-stat-number">250+</div>
+                  <div className="hero-stat-number">3</div>
                   <div className="hero-stat-label">Days</div>
                 </div>
                 <div className="hero-stat">
