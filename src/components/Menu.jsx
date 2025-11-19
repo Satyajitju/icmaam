@@ -11,9 +11,9 @@ function Menu() {
             <span className="nav-mark-text">ICMAAM</span>
           </div>
           <div className="nav-title">
-            <div className="nav-title-main">ICMAAM 2023</div>
+            <div className="nav-title-main">ICMAAM 2026</div>
             <div className="nav-title-sub">
-              International Conference on Mathematical Analysis &amp; Applications in Modelling
+              4th International Conference on Mathematical Analysis &amp; Applications in Modelling
             </div>
           </div>
         </div>
