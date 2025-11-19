@@ -17,7 +17,7 @@ function TopBar() {
 
       <div className="top-strip-right">
         <div className="top-strip-title">
-          4th International Conference on Mathematical Analysis and Applications in Modelling
+          4<sup>th</sup> International Conference on Mathematical Analysis and Applications in Modelling
         </div>
         <div className="top-strip-sub">(ICMAAM 2026)</div>
         <div className="top-strip-org">
