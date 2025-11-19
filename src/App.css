@@ -167,6 +167,65 @@ body {
   mix-blend-mode: soft-light;
   z-index: 0;
 }
+/* Registration page styling */
+
+.registration-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.registration-card {
+  max-width: 620px;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 1.3rem;
+
+  background: radial-gradient(
+      circle at 0 0,
+      rgba(99, 102, 241, 0.25),
+      transparent 70%
+    ),
+    rgba(15, 23, 42, 0.88);
+
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(14px);
+  text-align: center;
+}
+
+.registration-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+}
+
+.reg-text {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  margin-bottom: 1.2rem;
+}
+
+.reg-list {
+  text-align: left;
+  margin: 0 auto 1.2rem auto;
+  padding-left: 1.2rem;
+  max-width: 420px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.reg-coming {
+  margin-top: 1.4rem;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.8rem;
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.2);
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
 
 /* layout */
 
