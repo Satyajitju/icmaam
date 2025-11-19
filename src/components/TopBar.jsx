@@ -5,7 +5,7 @@ function TopBar() {
     <div className="top-strip">
       <div className="top-strip-left">
         <img
-          src="/logo_JU.jpeg"
+          src="/logo_ju.jpeg"
           alt="ICMAAM Logo"
           className="top-strip-logo"
         />
