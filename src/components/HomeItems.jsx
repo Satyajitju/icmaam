@@ -11,10 +11,10 @@ export class HomeItems extends Component {
             </div>
             <ul>
               <li style={{textAlign: 'justify'}}>
-              We have a proposal for probably Springer Book Proceedings, Full length papers presented in  ICMAAM-2023 will undergo a peer review process and selected papers will subsequently be published in Springer Book Proceedings.
+              We have a proposal for probably Springer Book Proceedings, Full length papers presented in  ICMAAM-2026 will undergo a peer review process and selected papers will subsequently be published in Springer Book Proceedings.
               </li>
               <li style={{textAlign: 'justify'}}>
-              Full length papers presented in  ICMAAM-2023 will undergo a peer review process and selected papers will subsequently be published in special issues of the following journals:
+              Full length papers presented in  ICMAAM-2026 will undergo a peer review process and selected papers will subsequently be published in special issues of the following journals:
               <ol>
                 <li value="1"><a href="http://biomathsociety.in/ijbsb.html" target="_blank">International Journal of Biomathematics and System Biology</a></li>
                 <li><a href="https://www.worldcat.org/title/875137801">Bulletin of Calcutta Mathematical Society/Journal of Calcutta Mathematical Society</a></li>
@@ -31,7 +31,7 @@ export class HomeItems extends Component {
               <p className="text-primary fw-bold fs-3 my-auto ml-5">Call For Papers:</p>
             </div>
             <p className="text-danger fw-200" style={{textAlign: 'justify'}}>
-            Papers pertaining to conference areas of interest, as listed in “Aims and Scopes”, are invited for ICMAAM-2023. The authors are requested to submit their abstracts and title of the paper only before Conference, which are not being under consideration for publication by any other journal or conference, latest by September 24th, 2023 at the email: icmaam2023@gmail.com
+            Papers pertaining to conference areas of interest, as listed in “Aims and Scopes”, are invited for ICMAAM-2026. The authors are requested to submit their abstracts and title of the paper only before Conference, which are not being under consideration for publication by any other journal or conference, latest by September 24th, 2023 at the email: icmaam2026@gmail.com
             </p>
             </div>
         </div>
