@@ -129,7 +129,7 @@ function Home() {
           <div className="section-header">
             <h2>Important Dates</h2>
             <p className="section-sub">
-              Replace placeholders with the final timeline of the conference.
+              Final timeline of the conference will be updated soon.
             </p>
           </div>
           <div className="timeline">
