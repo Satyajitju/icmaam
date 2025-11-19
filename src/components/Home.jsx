@@ -79,7 +79,7 @@ function Home() {
           <div className="section-header">
             <h2>Scientific Themes</h2>
             <p className="section-sub">
-              Adapt or extend these areas according to the actual scope of the 4th ICMAAM.
+            
             </p>
           </div>
           <div className="theme-grid">
