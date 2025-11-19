@@ -23,7 +23,7 @@ export class ConferenceDet extends Component {
   render() {
     return (
       <div className="m-4">
-       <p style={{fontSize: 18, textAlign: 'justify'}}> <strong>International Conference on Mathematical Analysis and Applications in Modeling (ICMAAM 2023) </strong>is aimed to bring researchers and professionals to discuss recent developments in Pure and Applied mathematics and their applications in Mathematical Modeling, in order to create a professional knowledge exchange platform between mathematicians. The Thrust area of the conference includes but is not limited to:
+       <p style={{fontSize: 18, textAlign: 'justify'}}> <strong>International Conference on Mathematical Analysis and Applications in Modeling (ICMAAM 2026) </strong>is aimed to bring researchers and professionals to discuss recent developments in Pure and Applied mathematics and their applications in Mathematical Modeling, in order to create a professional knowledge exchange platform between mathematicians. The Thrust area of the conference includes but is not limited to:
        </p>
        <div className="d-flex flex-column flex-md-row flex-lg-row justify-content-around">
        <ul className="text-left d-flex flex-column">
