@@ -1,26 +1,66 @@
-import React, { Component } from 'react'
-import { SocialIcon } from 'react-social-icons';
+// src/components/Footer.jsx
+import React from "react";
+import { SocialIcon } from "react-social-icons";
 
-export class Footer extends Component {
-  render() {
-    return (
-      <div className="bg-secondary-subtle  my-2 mx-4 justify-content-around text-center p-1">
-      <div className='d-flex flex-column flex-lg-row flex-md-row  justify-content-around text-center'>
-        <div className='col-lg-6 my-auto'>
-            {/* <img src="https://static.wixstatic.com/media/485cee_46bfcf61e1fe4cc78cf03373aaef256a~mv2.gif" alt="" /> */}
-            <p className='m-3'>&copy; 2023 Jadavpur University</p>
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+
+        {/* Left Section */}
+        <div className="footer-about">
+          <h3>ICMAAM 2026</h3>
+          <p>
+            4<sup>th</sup> International Conference on Mathematical Analysis and
+            Applications in Modelling<br />
+            12–14 October 2026 • Jadavpur University
+          </p>
         </div>
-        <div className="col-lg-4 m-1">
-            <ul class="list-unstyled d-flex flex-row justify-content-center text-center">
-                <li><SocialIcon url='#' bgColor='#fff' fgColor='gray' className='m-3'/></li>
-                <li><SocialIcon url='https://twitter.com/icmaam2018' bgColor='#fff' fgColor='gray' className='m-3'/></li>
-            </ul>
+
+        {/* Middle Section */}
+        <div className="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/organization">Organisation</a></li>
+            <li><a href="/speakers">Speakers</a></li>
+            <li><a href="/travel">Travel</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        {/* Right Section */}
+        <div className="footer-social">
+          <h4>Connect</h4>
+          <div className="footer-social-row">
+            <SocialIcon
+              url="https://twitter.com/icmaam2018"
+              bgColor="#ffffff10"
+              fgColor="#ffffff"
+              style={{ height: 38, width: 38 }}
+            />
+            <SocialIcon
+              url="mailto:icmaam2026@gmail.com"
+              bgColor="#ffffff10"
+              fgColor="#ffffff"
+              style={{ height: 38, width: 38 }}
+            />
+          </div>
         </div>
       </div>
-        <p>This page is created and developed by Pulak Kumar Ghosh (CSE, Jadavpur University) & Satyajit Mukherjee (Mathematics, Jadavpur University)</p>
+
+      {/* Bottom credits */}
+      <div className="footer-bottom">
+        <p>
+          © {new Date().getFullYear()} Department of Mathematics, Jadavpur University
+        </p>
+        <p className="footer-credits">
+          Designed & Developed by <strong>Pulak Kumar Ghosh</strong> (CSE, JU) and{" "}
+          <strong>Satyajit Mukherjee</strong> (Mathematics, JU)
+        </p>
       </div>
-    )
-  }
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
