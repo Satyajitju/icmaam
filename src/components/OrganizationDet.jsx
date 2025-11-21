@@ -1,11 +1,11 @@
 // src/components/OrganizationDet.jsx
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function OrganizationDet() {
-  const [international, setInternational] = useState<string[]>([]);
-  const [national, setNational] = useState<string[]>([]);
-  const [local, setLocal] = useState<string[]>([]);
+  const [international, setInternational] = useState([]);
+  const [national, setNational] = useState([]);
+  const [local, setLocal] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
