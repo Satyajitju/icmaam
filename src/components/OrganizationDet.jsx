@@ -35,72 +35,141 @@ function OrganizationDet() {
       <div className="container">
         {/* Header */}
         <div className="section-header">
-          <h2>Organising Committee</h2>
+          <h2>Organising Structure</h2>
           <p className="section-sub">
-            The conference is organised under the guidance of distinguished
-            members of Jadavpur University and supported by international,
-            national and local scientific advisory committees.
+            ICMAAM 2026 is guided by a central organising committee and a set of
+            dedicated sub-committees responsible for different aspects of the
+            conference.
           </p>
         </div>
 
-        {/* Top roles */}
+        {/* Organising Committee */}
+        <h3 className="org-section-label">Organising Committee</h3>
         <div className="org-roles-grid">
           <div className="org-role-card">
             <h3>Chief Patron</h3>
-            <p className="org-name">Prof. (Dr.) Chiranjib Bhattacharjee</p>
-            <p className="org-role">Vice Chancellor, Jadavpur University</p>
+            <p className="org-name">[Prof. (Dr.) Chiranjib Bhattyacharya]</p>
+            <p className="org-role">[Hon'ble Vice Chancellor, Jadavpur University]</p>
           </div>
 
           <div className="org-role-card">
-            <h3>Patrons</h3>
-            <p className="org-name">Prof. (Dr.) Amitava Dutta</p>
-            <p className="org-role">Pro-Vice Chancellor, Jadavpur University</p>
-            <p className="org-name">Prof. (Dr.) Subenoy Chakraborty</p>
-            <p className="org-role">
-              Dean, Faculty of Science, Jadavpur University
-            </p>
+            <h3>Patron</h3>
+            <p className="org-name">[Prof. (Dr.) Amitava Dutta]</p>
+            <p className="org-role">[Hon'ble Pro-Vice Chancellor, Jadavpur University]</p>
           </div>
 
           <div className="org-role-card">
             <h3>Chairman</h3>
-            <p className="org-name">Prof. (Dr.) Saghnik Sinha</p>
-            <p className="org-role">
-              Head, Department of Mathematics, Jadavpur University
-            </p>
-            <h4 className="org-subheading">Treasurer</h4>
-            <p className="org-name">Prof. (Dr.) Arindam Bhattacharya</p>
-            <p className="org-role">
-              Department of Mathematics, Jadavpur University
-            </p>
+            <p className="org-name">[Prof. (Dr.) Subhas Chandra Mondal]</p>
+            <p className="org-role">[Hon'ble Head, Department of Mathematics, Jadavpur University]</p>
           </div>
 
           <div className="org-role-card">
-            <h3>Organising Secretaries</h3>
-            <p className="org-name">Prof. (Dr.) Priti Kumar Roy</p>
-            <p className="org-role">
-              Department of Mathematics, Jadavpur University
-            </p>
-            <h4 className="org-subheading">Executive Secretary</h4>
-            <p className="org-name">Prof. (Dr.) Nandadulal Bairagi</p>
-            <p className="org-role">
-              Department of Mathematics, Jadavpur University
-            </p>
+            <h3>Organising Secretary</h3>
+            <p className="org-name">[Prof. (Dr.) Priti Kumar Roy]</p>
+            <p className="org-role">[Jadavpur University]</p>
           </div>
 
           <div className="org-role-card">
-            <h3>Joint Organising Secretaries</h3>
-            <p className="org-name">Prof. (Dr.) Kallol Paul</p>
-            <p className="org-role">
-              Department of Mathematics, Jadavpur University
-            </p>
-            <p className="org-name">Prof. (Dr.) Dipak Kumar Kesh</p>
-            <p className="org-role">
-              Department of Mathematics, Jadavpur University
-            </p>
+            <h3>Joint Secretary</h3>
+            <p className="org-name">[Prof. (Dr.) Dipak Kumar Kesh]</p>
+            <p className="org-role">[Jadavpur University]</p>
+            <p className="org-name">[Prof.(Dr.) Arindam Bhattyachatya]</p>
+            <p className="org-role">[Jadavpur University]</p>
+          </div>
+
+          <div className="org-role-card">
+            <h3>Executive Secretary</h3>
+            <p className="org-name">[Prof. (Dr.) Nandadulal Bairagi]</p>
+            <p className="org-role">[Jadavpur University]</p>
           </div>
         </div>
 
-        {/* Committees */}
+        {/* Sub-Committees */}
+        <h3 className="org-section-label">Sub-Committees</h3>
+        <p className="section-sub" style={{ marginBottom: "1.4rem" }}>
+          The following sub-committees coordinate specific aspects such as
+          finance, technical programme, scientific coordination and logistics.
+        </p>
+
+        <div className="org-sub-grid">
+          <div className="org-sub-card">
+            <h4>Finance</h4>
+            <p className="org-sub-role">Joint Convenors</p>
+            <ul className="org-sub-list">
+              <li>[Prof. (Dr.) Gopal Chandra Shit, Jadavpur University]</li>
+              <li>[Prof. (Dr.) Abhijit Lahiri, Jadavpur University]</li>
+            </ul>
+          </div>
+
+          <div className="org-sub-card">
+            <h4>Technical</h4>
+            <p className="org-sub-role">Joint Convenors</p>
+            <ul className="org-sub-list">
+              <li>[Prof. (Dr.) Farook Rahaman, Jadavpur University] </li>
+              <li>[Prof. (Dr.) Bibhas Chandra Giri, Jadavpur University]</li>
+              <li>Dr. Santosh Biswas, Jadavpur University</li>
+            </ul>
+          </div>
+
+          <div className="org-sub-card">
+            <h4>Scientific</h4>
+            <p className="org-sub-role">Joint Convenors</p>
+            <ul className="org-sub-list">
+              <li>Prof. (Dr.) Shamik Ghosh, Jadavpur University</li>
+              <li>Prof. (Dr.) Bibhas Chandra Giri, Jadavpur University</li>
+              <li>Prof. (Dr.) Alaka Das, Jadavpur University</li>
+            </ul>
+          </div>
+
+          <div className="org-sub-card">
+            <h4>Publication</h4>
+            <p className="org-sub-role">Joint Convenors</p>
+            <ul className="org-sub-list">
+              <li>Prof. (Dr.) Anup Bandyopadhyay, Jadavpur University </li>
+              <li>Prof. (Dr.) Shamik Ghosh, Jadavpur University</li>
+              <li>Prof. (Dr.) Sujit Sardar, Jadavpur University</li>
+              <li>Prof. (Dr.) Sukhendu Kar, Jadavpur University</li>
+            </ul>
+          </div>
+
+          <div className="org-sub-card">
+            <h4>Reception</h4>
+            <p className="org-sub-role">Joint Convenors</p>
+            <ul className="org-sub-list">
+              <li>Dr. Manasi Mondal, Jadavpur University</li>
+              <li>Prof. (Dr.) Nilanjana Mahata, Jadavpur University</li>
+              <li>Prof. (Dr.) Anup Bandyopadhyay, Jadavpur University</li>
+            </ul>
+          </div>
+
+          <div className="org-sub-card">
+            <h4>Accommodation</h4>
+            <p className="org-sub-role">Convenor(s)</p>
+            <ul className="org-sub-list">
+              <li>Dr. Riddhick Birbonshi, Jadavpur University</li>
+            </ul>
+          </div>
+
+          <div className="org-sub-card">
+            <h4>Refreshment</h4>
+            <p className="org-sub-role">Convenor(s)</p>
+            <ul className="org-sub-list">
+              <li>Dr. Molla Basir Ahamed, Jadavpur University</li>
+            </ul>
+          </div>
+
+          <div className="org-sub-card">
+            <h4>Travel</h4>
+            <p className="org-sub-role">Convenor(s)</p>
+            <ul className="org-sub-list">
+              <li>Dr. Sanjib Kumar Pal, Jadavpur University</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Scientific Advisory Committees (from API) */}
+        <h3 className="org-section-label">Scientific Advisory Committees</h3>
         <div className="org-committee-grid">
           <div className="org-committee-column">
             <h3 className="org-committee-title">
