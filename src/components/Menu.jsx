@@ -22,10 +22,17 @@ function Menu() {
           <NavLink to="/" end>
             Home
           </NavLink>
+
           <NavLink to="/publications">Publications</NavLink>
           <NavLink to="/speakers">Speakers</NavLink>
           <NavLink to="/organization">Committee</NavLink>
+
+          {/* Added two new important links */}
+          <NavLink to="/department">Department</NavLink>
+          <NavLink to="/university">University</NavLink>
+
           <NavLink to="/travel">Travel</NavLink>
+
           <NavLink to="/registration" className="nav-links-cta">
             Register
           </NavLink>
