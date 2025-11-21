@@ -82,7 +82,7 @@ function Home() {
 <section className="section">
   <div className="container">
     <div className="section-header">
-      <h2>Cinematic Campus Gallery</h2>
+      <h2>JU Campus Gallery</h2>
       <p className="section-sub">
         A moving glimpse of Jadavpur University
       </p>
