@@ -1,16 +1,9 @@
-import React, { Component } from 'react'
-import Caraousel from './Caraousel4'
-import UniversityDet from './UniversityDet'
+// src/components/UniversityAbout.jsx
+import React from "react";
+import UniversityDet from "./UniversityDet";
 
-export class UniversityAbout extends Component {
-  render() {
-    return (
-      <div>
-        <Caraousel />
-        <UniversityDet />
-      </div>
-    )
-  }
+function UniversityAbout() {
+  return <UniversityDet />;
 }
 
-export default UniversityAbout
+export default UniversityAbout;
