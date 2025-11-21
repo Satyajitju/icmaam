@@ -178,22 +178,26 @@ function Home() {
           <div className="section-card">
             <h3>Key pages</h3>
             <ul className="link-list">
-              <li>
-                <Link to="/speakers">Invited Speakers</Link>
-              </li>
-              <li>
-                <Link to="/organization">Organising Committee</Link>
-              </li>
-              <li>
-                <Link to="/travel">Travel &amp; Local Information</Link>
-              </li>
-              <li>
-                <Link to="/fundings">Funding / Support</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact &amp; Enquiries</Link>
-              </li>
-            </ul>
+          <li>
+        <Link to="/department">Department of Mathematics</Link>  {/* ✅ NEW */}
+        </li>
+       <li>
+      <Link to="/speakers">Invited Speakers</Link>
+      </li>
+      <li>
+      <Link to="/organization">Organising Committee</Link>
+      </li>
+  <li>
+    <Link to="/travel">Travel &amp; Local Information</Link>
+  </li>
+  <li>
+    <Link to="/fundings">Funding / Support</Link>
+  </li>
+  <li>
+    <Link to="/contact">Contact &amp; Enquiries</Link>
+  </li>
+</ul>
+
           </div>
         </div>
       </section>
