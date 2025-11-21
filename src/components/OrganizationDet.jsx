@@ -48,40 +48,40 @@ function OrganizationDet() {
         <div className="org-roles-grid">
           <div className="org-role-card">
             <h3>Chief Patron</h3>
-            <p className="org-name">[Prof. (Dr.) Chiranjib Bhattyacharya]</p>
-            <p className="org-role">[Hon'ble Vice Chancellor, Jadavpur University]</p>
+            <p className="org-name">Prof. (Dr.) Chiranjib Bhattyacharya</p>
+            <p className="org-role">Hon'ble Vice Chancellor, Jadavpur University</p>
           </div>
 
           <div className="org-role-card">
             <h3>Patron</h3>
-            <p className="org-name">[Prof. (Dr.) Amitava Dutta]</p>
-            <p className="org-role">[Hon'ble Pro-Vice Chancellor, Jadavpur University]</p>
+            <p className="org-name">Prof. (Dr.) Amitava Dutta</p>
+            <p className="org-role">Hon'ble Pro-Vice Chancellor, Jadavpur University</p>
           </div>
 
           <div className="org-role-card">
             <h3>Chairman</h3>
-            <p className="org-name">[Prof. (Dr.) Subhas Chandra Mondal]</p>
-            <p className="org-role">[Hon'ble Head, Department of Mathematics, Jadavpur University]</p>
+            <p className="org-name">Prof. (Dr.) Subhas Chandra Mondal</p>
+            <p className="org-role">Hon'ble Head, Department of Mathematics, Jadavpur University</p>
           </div>
 
           <div className="org-role-card">
             <h3>Organising Secretary</h3>
-            <p className="org-name">[Prof. (Dr.) Priti Kumar Roy]</p>
-            <p className="org-role">[Jadavpur University]</p>
+            <p className="org-name">Prof. (Dr.) Priti Kumar Roy</p>
+            <p className="org-role">Jadavpur University</p>
           </div>
 
           <div className="org-role-card">
             <h3>Joint Secretary</h3>
-            <p className="org-name">[Prof. (Dr.) Dipak Kumar Kesh]</p>
-            <p className="org-role">[Jadavpur University]</p>
-            <p className="org-name">[Prof.(Dr.) Arindam Bhattyachatya]</p>
-            <p className="org-role">[Jadavpur University]</p>
+            <p className="org-name">Prof. (Dr.) Dipak Kumar Kesh</p>
+            <p className="org-role">Jadavpur University</p>
+            <p className="org-name">Prof.(Dr.) Arindam Bhattyachatya</p>
+            <p className="org-role">Jadavpur University</p>
           </div>
 
           <div className="org-role-card">
             <h3>Executive Secretary</h3>
-            <p className="org-name">[Prof. (Dr.) Nandadulal Bairagi]</p>
-            <p className="org-role">[Jadavpur University]</p>
+            <p className="org-name">Prof. (Dr.) Nandadulal Bairagi</p>
+            <p className="org-role">Jadavpur University</p>
           </div>
         </div>
 
@@ -97,8 +97,8 @@ function OrganizationDet() {
             <h4>Finance</h4>
             <p className="org-sub-role">Joint Convenors</p>
             <ul className="org-sub-list">
-              <li>[Prof. (Dr.) Gopal Chandra Shit, Jadavpur University]</li>
-              <li>[Prof. (Dr.) Abhijit Lahiri, Jadavpur University]</li>
+              <li>Prof. (Dr.) Gopal Chandra Shit, Jadavpur University</li>
+              <li>Prof. (Dr.) Abhijit Lahiri, Jadavpur University</li>
             </ul>
           </div>
 
@@ -106,8 +106,8 @@ function OrganizationDet() {
             <h4>Technical</h4>
             <p className="org-sub-role">Joint Convenors</p>
             <ul className="org-sub-list">
-              <li>[Prof. (Dr.) Farook Rahaman, Jadavpur University] </li>
-              <li>[Prof. (Dr.) Bibhas Chandra Giri, Jadavpur University]</li>
+              <li>Prof. (Dr.) Farook Rahaman, Jadavpur University </li>
+              <li>Prof. (Dr.) Bibhas Chandra Giri, Jadavpur University</li>
               <li>Dr. Santosh Biswas, Jadavpur University</li>
             </ul>
           </div>
