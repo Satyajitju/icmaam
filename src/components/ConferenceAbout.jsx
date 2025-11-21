@@ -1,17 +1,9 @@
-import React, { Component } from 'react'
-import Caraousel from './Caraousel2'
-import ConferenceDet from './ConferenceDet'
-import HomeItems from './HomeItems'
+// src/components/ConferenceAbout.jsx
+import React from "react";
+import Publication from "./Publication";
 
-export class ConferenceAbout extends Component {
-  render() {
-    return (
-      <div>
-        <Caraousel />
-        <HomeItems />
-      </div>
-    )
-  }
+function ConferenceAbout() {
+  return <Publication />; // Page now directly shows our new publication section
 }
 
-export default ConferenceAbout
+export default ConferenceAbout;
