@@ -1198,3 +1198,20 @@ body {
     height: 160px;
   }
 }
+.univ-text {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  text-align: justify;
+  margin-bottom: 0.9rem;
+}
+
+.univ-list {
+  margin: 0.5rem 0 1rem 0;
+  padding-left: 1.2rem;
+  font-size: 0.93rem;
+  color: var(--text-muted);
+}
+
+.univ-list li {
+  margin-bottom: 0.35rem;
+}
