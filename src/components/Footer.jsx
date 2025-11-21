@@ -55,8 +55,7 @@ function Footer() {
           © {new Date().getFullYear()} Department of Mathematics, Jadavpur University
         </p>
         <p className="footer-credits">
-          Designed & Developed by <strong>Pulak Kumar Ghosh</strong> (CSE, JU) and{" "}
-          <strong>Satyajit Mukherjee</strong> (Mathematics, JU)
+          Designed & Developed by <strong>Satyajit Mukherjee</strong> (Mathematics, JU)
         </p>
       </div>
     </footer>
