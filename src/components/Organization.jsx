@@ -1,16 +1,13 @@
-import React, { Component } from 'react'
-import Caraousel from './Caraousel7'
-import OrganizationDet from './OrganizationDet'
+// src/components/Organization.jsx
+import React from "react";
+import OrganizationDet from "./OrganizationDet";
 
-export class Organization extends Component {
-  render() {
-    return (
-      <div>
-        <Caraousel />
-        <OrganizationDet />
-      </div>
-    )
-  }
+function Organization() {
+  return (
+    <div>
+      <OrganizationDet />
+    </div>
+  );
 }
 
-export default Organization
+export default Organization;
