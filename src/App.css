@@ -1017,3 +1017,60 @@ body {
     display: inline-block;
   }
 }
+/* ---------- Publications Page ---------- */
+
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pub-card,
+.pub-card-wide {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: 1.1rem;
+  padding: 1.6rem 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.55);
+  box-shadow: var(--shadow-soft);
+}
+
+.pub-card-wide {
+  margin-bottom: 1.6rem;
+}
+
+.pub-title {
+  font-size: 1.12rem;
+  margin: 0 0 0.6rem;
+}
+
+.pub-text {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.pub-list {
+  padding-left: 1.15rem;
+  margin-top: 0.4rem;
+}
+
+.pub-list li {
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.pub-list a {
+  color: #a5b4fc;
+  text-decoration: none;
+}
+
+.pub-list a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pub-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
