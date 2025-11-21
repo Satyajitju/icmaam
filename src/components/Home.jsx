@@ -72,6 +72,83 @@ function Home() {
           </aside>
         </div>
       </section>
+      {/* Auto-Scrolling Cinematic JU Gallery */}
+<section className="section">
+  <div className="container">
+    <div className="section-header">
+      <h2>Cinematic Campus Gallery</h2>
+      <p className="section-sub">A moving glimpse of Jadavpur University</p>
+    </div>
+
+    <div className="auto-gallery">
+      <div className="auto-track">
+
+        {/* Image 1 */}
+        <div className="auto-item">
+          <img 
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200"
+            alt="JU Campus"
+          />
+        </div>
+
+        {/* Image 2 */}
+        <div className="auto-item">
+          <img 
+            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200"
+            alt="JU Gardens"
+          />
+        </div>
+
+        {/* Image 3 */}
+        <div className="auto-item">
+          <img 
+            src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1200"
+            alt="Academics"
+          />
+        </div>
+
+        {/* Image 4 */}
+        <div className="auto-item">
+          <img 
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200"
+            alt="University Building"
+          />
+        </div>
+
+        {/* Duplicate set for seamless infinite loop */}
+        <div className="auto-item">
+          <img 
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200"
+            alt="JU Campus"
+          />
+        </div>
+
+        <div className="auto-item">
+          <img 
+            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200"
+            alt="JU Gardens"
+          />
+        </div>
+
+        <div className="auto-item">
+          <img 
+            src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1200"
+            alt="Academics"
+          />
+        </div>
+
+        <div className="auto-item">
+          <img 
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200"
+            alt="University Building"
+          />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Themes / quick links */}
       <section className=" section section-alt">
