@@ -1,4 +1,10 @@
-// src/components/Home.jsx
+import juGateBubbles from "../assets/juGateBubbles.png";
+import juLakeBridge from "../assets/math_dept.png";
+import juGateTaxi from "../assets/juGateTaxi.png";
+import juCentralLibrary from "../assets/juCentralLibrary.png";
+import juStatueNight from "../assets/juStatueNight.png";
+import juRoadFlowers from "../assets/juRoadFlowers.png";
+import juEveningWalk from "../assets/juEveningWalk.png";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -77,77 +83,63 @@ function Home() {
   <div className="container">
     <div className="section-header">
       <h2>Cinematic Campus Gallery</h2>
-      <p className="section-sub">A moving glimpse of Jadavpur University</p>
+      <p className="section-sub">
+        A moving glimpse of Jadavpur University
+      </p>
     </div>
 
     <div className="auto-gallery">
       <div className="auto-track">
-
-        {/* Image 1 */}
+        {/* First set */}
         <div className="auto-item">
-          <img 
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200"
-            alt="JU Campus"
-          />
+          <img src={juGateBubbles} alt="Jadavpur University gate with bubbles" />
         </div>
-
-        {/* Image 2 */}
         <div className="auto-item">
-          <img 
-            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200"
-            alt="JU Gardens"
-          />
+          <img src={juLakeBridge} alt="Lotus lake and bridge, JU campus" />
         </div>
-
-        {/* Image 3 */}
         <div className="auto-item">
-          <img 
-            src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1200"
-            alt="Academics"
-          />
+          <img src={juGateTaxi} alt="Jadavpur University main gate in rain" />
         </div>
-
-        {/* Image 4 */}
         <div className="auto-item">
-          <img 
-            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200"
-            alt="University Building"
-          />
+          <img src={juCentralLibrary} alt="Central Library, Jadavpur University" />
+        </div>
+        <div className="auto-item">
+          <img src={juStatueNight} alt="Statue at night, Jadavpur University" />
+        </div>
+        <div className="auto-item">
+          <img src={juRoadFlowers} alt="Tree-lined road with flowers, JU campus" />
+        </div>
+        <div className="auto-item">
+          <img src={juEveningWalk} alt="Evening walk on campus" />
         </div>
 
         {/* Duplicate set for seamless infinite loop */}
         <div className="auto-item">
-          <img 
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200"
-            alt="JU Campus"
-          />
+          <img src={juGateBubbles} alt="Jadavpur University gate with bubbles" />
         </div>
-
         <div className="auto-item">
-          <img 
-            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200"
-            alt="JU Gardens"
-          />
+          <img src={juLakeBridge} alt="Lotus lake and bridge, JU campus" />
         </div>
-
         <div className="auto-item">
-          <img 
-            src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1200"
-            alt="Academics"
-          />
+          <img src={juGateTaxi} alt="Jadavpur University main gate in rain" />
         </div>
-
         <div className="auto-item">
-          <img 
-            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200"
-            alt="University Building"
-          />
+          <img src={juCentralLibrary} alt="Central Library, Jadavpur University" />
         </div>
-
+        <div className="auto-item">
+          <img src={juStatueNight} alt="Statue at night, Jadavpur University" />
+        </div>
+        <div className="auto-item">
+          <img src={juRoadFlowers} alt="Tree-lined road with flowers, JU campus" />
+        </div>
+        <div className="auto-item">
+          <img src={juEveningWalk} alt="Evening walk on campus" />
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
       {/* Themes / quick links */}
