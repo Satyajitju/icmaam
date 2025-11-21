@@ -1,16 +1,9 @@
-import React, { Component } from 'react'
-import Caraousel from './Caraousel3'
-import DepartmentDet from './DepartmentDet'
+// src/components/DepartmentAbout.jsx
+import React from "react";
+import DepartmentDet from "./DepartmentDet";
 
-export class DepartmentAbout extends Component {
-  render() {
-    return (
-      <div>
-        <Caraousel />
-        <DepartmentDet />
-      </div>
-    )
-  }
+function DepartmentAbout() {
+  return <DepartmentDet />;
 }
 
-export default DepartmentAbout
+export default DepartmentAbout;
