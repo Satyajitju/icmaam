@@ -1,23 +1,56 @@
-import React, { Component } from 'react'
-import Map from './Map'
+// src/components/KolkataDet.jsx
+import React from "react";
+import Map from "./Map";
 
-export class KolkataDet extends Component {
-  render() {
-    return (
-        <div className="m-5">
-        <h3>From Sealdah Kolkata Station to Venue</h3>
-        <p>From Kolkata Station, Taxi may directly reach you the venue Department of Mathematics (Approx. 80 minutes) through Gate No. 4 at Bengal Lamp.</p>
-        <div className="text-center mx-5 d-flex flex-column flex-lg-row flex-md-row justify-content-around my-2">
-            <div className="col-lg-3 m-2">
-                <Map Lat={22.60129783798892} Lng={88.37946130174645} Name="Sealdah station, BB Ganguly Street, Raja Bazar, Kolkata, West Bengal 700014, India" />
+function KolkataDet() {
+  return (
+    <section className="section">
+      <div className="container">
+        {/* Header */}
+        <div className="section-header">
+          <h2>From Kolkata Railway Station</h2>
+          <p className="section-sub">
+            Direct taxi route from Kolkata Station to Jadavpur University.
+          </p>
+        </div>
+
+        <div className="travel-layout">
+          {/* Info */}
+          <div className="travel-info-card">
+            <h3>By Taxi</h3>
+            <p className="travel-text">
+              From Kolkata Railway Station, taxis can directly reach the
+              Department of Mathematics, Jadavpur University via Gate No. 4
+              (Bengal Lamp). The approximate travel time is{" "}
+              <strong>around 80 minutes</strong>, depending on traffic
+              conditions.
+            </p>
+          </div>
+
+          {/* Maps */}
+          <div className="travel-maps">
+            <div className="travel-map-card">
+              <p className="travel-map-title">Kolkata Railway Station</p>
+              <Map
+                Lat={22.60129783798892}
+                Lng={88.37946130174645}
+                Name="Kolkata Railway Station, Kolkata"
+              />
             </div>
-            <div className="col-lg-3 m-2">
-                <Map Lat={22.50082029467077} Lng={88.37143577635288} Name="Jadavpur, Kolkata, West Bengal 700032, India" />
+
+            <div className="travel-map-card">
+              <p className="travel-map-title">Jadavpur University</p>
+              <Map
+                Lat={22.50082029467077}
+                Lng={88.37143577635288}
+                Name="Jadavpur, Kolkata, West Bengal 700032, India"
+              />
             </div>
+          </div>
         </div>
       </div>
-    )
-  }
+    </section>
+  );
 }
 
-export default KolkataDet
+export default KolkataDet;
