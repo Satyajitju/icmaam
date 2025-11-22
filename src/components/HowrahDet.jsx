@@ -1,26 +1,64 @@
-import React, { Component } from 'react'
-import Map from './Map'
+// src/components/HowrahDet.jsx
+import React from "react";
+import Map from "./Map";
 
-export class HowrahDet extends Component {
-  render() {
-    return (
-        <div className="m-5">
-        <h3>From Howrah Railway Station to Venue</h3>
-        <ul>
-            <li>There are many buses at Station which reach you Jadavpur University (Gate No. 4) at Bengal Lamp or Jadavpur 8B Bus Stand (45 minutes approximately). For convenience, we would like to mention some buses like: E1 (get down at Gate 4/Bengal Lamp), AC1 (get down at Gate 4/Bengal Lamp).</li>
-            <li>From Station, Taxi may directly reach you the venue Department of Mathematics (Approx. 35 minutes) through Gate No. 4 at Bengal Lamp.</li>
-        </ul>
-        <div className="text-center mx-5 d-flex flex-column flex-lg-row flex-md-row justify-content-around my-2">
-            <div className="col-lg-3 m-2">
-                <Map Lat={22.595770} Lng={88.263641} Name="Howrah Railway Station, Howrah, West Bengal, India" />
+function HowrahDet() {
+  return (
+    <section className="section">
+      <div className="container">
+        {/* Header */}
+        <div className="section-header">
+          <h2>From Howrah Railway Station</h2>
+          <p className="section-sub">
+            Recommended routes from Howrah Junction to Jadavpur University.
+          </p>
+        </div>
+
+        <div className="travel-layout">
+          {/* Text block */}
+          <div className="travel-info-card">
+            <h3>By Bus &amp; Taxi</h3>
+            <ul className="travel-list">
+              <li>
+                Several buses from Howrah reach Jadavpur University (Gate No. 4 –
+                Bengal Lamp) or Jadavpur 8B Bus Stand in about{" "}
+                <strong>45 minutes</strong>. For convenience, you may consider
+                buses such as <strong>E1</strong> (get down at Gate 4/Bengal Lamp)
+                and <strong>AC1</strong> (get down at Gate 4/Bengal Lamp).
+              </li>
+              <li>
+                Taxis are readily available from the station and can directly drop
+                you at the Department of Mathematics, Jadavpur University via Gate
+                No. 4 (Bengal Lamp) in approximately{" "}
+                <strong>35 minutes</strong>.
+              </li>
+            </ul>
+          </div>
+
+          {/* Maps */}
+          <div className="travel-maps">
+            <div className="travel-map-card">
+              <p className="travel-map-title">Howrah Railway Station</p>
+              <Map
+                Lat={22.59577}
+                Lng={88.263641}
+                Name="Howrah Railway Station, Howrah, West Bengal, India"
+              />
             </div>
-            <div className="col-lg-3 m-2">
-                <Map Lat={22.50082029467077} Lng={88.37143577635288} Name="Jadavpur, Kolkata, West Bengal 700032, India" />
+
+            <div className="travel-map-card">
+              <p className="travel-map-title">Jadavpur University</p>
+              <Map
+                Lat={22.50082029467077}
+                Lng={88.37143577635288}
+                Name="Jadavpur, Kolkata, West Bengal 700032, India"
+              />
             </div>
+          </div>
         </div>
       </div>
-    )
-  }
+    </section>
+  );
 }
 
-export default HowrahDet
+export default HowrahDet;
