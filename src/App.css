@@ -1154,15 +1154,16 @@ body {
 
 .auto-item {
   position: relative;
-  width: 360px;
-  height: 220px;
-  border-radius: 1rem;
+  width: 420px;     
+  height: 260px;    
+  border-radius: 1.5rem;  
   overflow: hidden;
 
   background: rgba(15, 23, 42, 0.95);
   border: 1px solid rgba(148, 163, 184, 0.4);
   box-shadow: var(--shadow-soft);
 }
+
 
 .auto-item img {
   width: 100%;
@@ -1194,10 +1195,11 @@ body {
 /* Mobile responsive */
 @media (max-width: 600px) {
   .auto-item {
-    width: 260px;
-    height: 160px;
+    width: 320px;   
+    height: 200px;  
   }
 }
+
 .univ-text {
   font-size: 0.95rem;
   color: var(--text-soft);
