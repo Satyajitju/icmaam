@@ -1215,3 +1215,57 @@ body {
 .univ-list li {
   margin-bottom: 0.35rem;
 }
+/* ---- Speakers coming soon ---- */
+
+.speakers-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speakers-card {
+  max-width: 720px;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 2rem 2.1rem;
+  border-radius: 1.3rem;
+
+  background: radial-gradient(
+      circle at 0 0,
+      rgba(99, 102, 241, 0.25),
+      transparent 70%
+    ),
+    rgba(15, 23, 42, 0.9);
+
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(14px);
+}
+
+.speakers-card h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.25rem;
+}
+
+.speakers-text {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  margin-bottom: 1rem;
+}
+
+.speakers-list {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.speakers-list li {
+  margin-bottom: 0.25rem;
+}
+
+.speakers-note {
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  margin: 0;
+}
