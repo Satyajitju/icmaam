@@ -1,23 +1,88 @@
-import React, { Component } from 'react'
-import {Link} from 'react-router-dom';
+// src/components/TravelDet.jsx
+import React from "react";
+import { Link } from "react-router-dom";
 
-export class TravelDet extends Component {
-  render() {
-    return (
-      <div className="m-4">
-        <div className="text-center mx-5 d-flex flex-column flex-lg-row flex-md-row justify-content-around">
-            <div className="col-lg-3 btn btn-success mx-3 my-2"><Link className="nav-link" to="/dumdum">From Dumdum Airport</Link></div>
-            <div className="col-lg-3 btn btn-success mx-3 my-2"><Link className="nav-link" to="/howrah">From Howrah Railway Station</Link></div>
-            <div className="col-lg-3 btn btn-success mx-3 my-2"><Link className="nav-link" to="/sealdah">From Sealdah Railway Station</Link></div>
-            <div className="col-lg-3 btn btn-success mx-3 my-2"><Link className="nav-link" to="/kolkata">From Kolkata Railway Station</Link></div>
+function TravelDet() {
+  return (
+    <section className="section">
+      <div className="container">
+        {/* Header */}
+        <div className="section-header">
+          <h2>Travel to Jadavpur University</h2>
+          <p className="section-sub">
+            Directions from major transportation hubs in Kolkata.
+          </p>
         </div>
-        <h3>Travel Information</h3>
-        <p style={{textAlign: 'justify'}}>
-One can enter the Jadavpur University campus through four gates: Gate No. 1 (3 minutes walking distance from Jadavpur Rail Station), Gate No. 2 (opposite to Jadavpur 8B Bus Stand, 2 minutes walking distance from Gate No. 1), Gate No. 3 (near to Jadavpur University Post Office, 2 minutes walking distance from Gate No. 2), Gate No. 4 (at Bengal Lamp Bus Stop, 2 minutes walking distance from Gate No. 3 and 4 minutes walking distance from Jadavpur Police Station). Car and Taxi will pass only through Gate No. 4 which remains open 24 hours. Other gates remain open only during working hours (9 a.m. to 9 p.m. except Saturday, Sunday and holidays). One can reach the venue (Department of Mathematics) from Gate No. 1, Gate No. 2, Gate No. 3 and Gate No. 4 by walking about 7 minutes, 7 minutes, 5 minutes and 3 minutes respectively.</p>
-        
+
+        {/* Travel grid */}
+        <div className="travel-grid">
+          <Link to="/dumdum" className="travel-card">
+            <div className="travel-icon">✈️</div>
+            <h3 className="travel-title">Airport (Dumdum)</h3>
+            <p className="travel-desc">
+              Buses, taxi & app cab routes from the airport.
+            </p>
+            <span className="travel-link">View Details →</span>
+          </Link>
+
+          <Link to="/howrah" className="travel-card">
+            <div className="travel-icon">🚆</div>
+            <h3 className="travel-title">Howrah Station</h3>
+            <p className="travel-desc">
+              Route to campus via Shibpur, Hazra & Jadavpur.
+            </p>
+            <span className="travel-link">View Details →</span>
+          </Link>
+
+          <Link to="/sealdah" className="travel-card">
+            <div className="travel-icon">🚆</div>
+            <h3 className="travel-title">Sealdah Station</h3>
+            <p className="travel-desc">
+              Direct bus, taxi & suburban train connections.
+            </p>
+            <span className="travel-link">View Details →</span>
+          </Link>
+
+          <Link to="/kolkata" className="travel-card">
+            <div className="travel-icon">🚆</div>
+            <h3 className="travel-title">Kolkata Station</h3>
+            <p className="travel-desc">
+              Taxi routes to Jadavpur (Gate No. 4).
+            </p>
+            <span className="travel-link">View Details →</span>
+          </Link>
+        </div>
+
+        {/* Extra travel notes */}
+        <div className="travel-info-card mt-4">
+          <h3>Campus Entry Gates</h3>
+          <p className="travel-desc">
+            Jadavpur University has four main gates:
+          </p>
+
+          <ul className="travel-list">
+            <li>
+              <strong>Gate 1:</strong> 3 mins from Jadavpur Railway Station
+            </li>
+            <li>
+              <strong>Gate 2:</strong> Opp. Jadavpur 8B Bus Stand
+            </li>
+            <li>
+              <strong>Gate 3:</strong> Near JU Post Office
+            </li>
+            <li>
+              <strong>Gate 4:</strong> Bengal Lamp Bus Stop — only vehicle entry
+            </li>
+          </ul>
+
+          <p className="travel-desc mt-2">
+            Walking time to venue (Dept. of Mathematics):  
+            Gate 1 → 7 mins, Gate 2 → 7 mins, Gate 3 → 5 mins, Gate 4 → 3 mins.
+          </p>
+        </div>
       </div>
-    )
-  }
+    </section>
+  );
 }
 
-export default TravelDet
+export default TravelDet;
