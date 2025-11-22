@@ -1,16 +1,9 @@
-import React, { Component } from 'react'
-import Caraousel from './Caraousel11'
-import HowrahDet from './HowrahDet'
+// src/components/Howrah.jsx
+import React from "react";
+import HowrahDet from "./HowrahDet";
 
-export class Howrah extends Component {
-  render() {
-    return (
-      <div>
-        <Caraousel />
-        <HowrahDet />
-      </div>
-    )
-  }
+function Howrah() {
+  return <HowrahDet />;
 }
 
-export default Howrah
+export default Howrah;
