@@ -1154,9 +1154,9 @@ body {
 
 .auto-item {
   position: relative;
-  width: 520px;     
-  height: 240px;    
-  border-radius: 1.5rem;  
+  width: 820px;     
+  height: 280px;    
+  border-radius: 1.3rem;  
   overflow: hidden;
 
   background: rgba(15, 23, 42, 0.95);
