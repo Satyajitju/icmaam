@@ -20,44 +20,41 @@ function RegistrationDet() {
           <div className="reg-card">
             <h3>International Participants</h3>
             <ul>
-              <li>Faculty Members: <strong>$200</strong></li>
-              <li>Faculty Members (Developing Countries): <strong>$150</strong></li>
-              <li>Students / Research Scholars: <strong>$100</strong></li>
-              <li>Students (Developing Countries): <strong>$75</strong></li>
+              <li>Faculty Members <span>$200</span></li>
+              <li>Faculty (Developing Countries) <span>$150</span></li>
+              <li>Students / Scholars <span>$100</span></li>
+              <li>Students (Developing Countries) <span>$75</span></li>
             </ul>
           </div>
 
-          <div className="reg-card">
+          <div className="reg-card highlight-card">
             <h3>Indian Participants</h3>
             <ul>
-              <li>Faculty (with accommodation): <strong>₹8000</strong></li>
-              <li>Faculty (without accommodation): <strong>₹4000</strong></li>
-              <li>Students (with accommodation): <strong>₹6000</strong></li>
-              <li>Students (without accommodation): <strong>₹3000</strong></li>
+              <li>Faculty (with accommodation) <span>₹8000</span></li>
+              <li>Faculty (without accommodation) <span>₹4000</span></li>
+              <li>Students (with accommodation) <span>₹6000</span></li>
+              <li>Students (without accommodation) <span>₹3000</span></li>
             </ul>
           </div>
 
           <div className="reg-card">
-            <h3>Jadavpur University Participants</h3>
+            <h3>Jadavpur University</h3>
             <ul>
-              <li>Students / Scholars: <strong>₹2000</strong></li>
-              <li>Faculty Members: <strong>₹3000</strong></li>
+              <li>Students / Scholars <span>₹2000</span></li>
+              <li>Faculty Members <span>₹3000</span></li>
             </ul>
           </div>
 
         </div>
 
-        {/* ---------------- PAYMENT DETAILS (TEMPORARY) ---------------- */}
-        <div className="reg-bank">
+        {/* ---------------- PAYMENT (COMING SOON) ---------------- */}
+        <div className="reg-bank creative-bank">
           <h3>Payment Details</h3>
-
-          <p className="bank-note">
-            Bank account details and online payment instructions will be announced shortly.
+          <p>
+            Payment instructions and bank details will be announced shortly.
           </p>
-
-          <p className="bank-note">
-            Participants are requested to check this page regularly for updates regarding
-            payment procedures and registration confirmation.
+          <p>
+            Please revisit this page for updates regarding payment and confirmation.
           </p>
         </div>
 
@@ -66,13 +63,13 @@ function RegistrationDet() {
           <ul>
             <li>Registration fees are not required for plenary and invited speakers.</li>
             <li>Accommodation details will be communicated separately.</li>
-            <li>Participants are advised to retain proof of payment for verification.</li>
+            <li>Please retain payment proof for verification.</li>
           </ul>
         </div>
 
         {/* ---------------- STATUS ---------------- */}
-        <div className="reg-coming">
-          Online registration will open soon.
+        <div className="reg-banner">
+          🚀 Online Registration Opening Soon
         </div>
 
       </div>
