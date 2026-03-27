@@ -1,14 +1,9 @@
 // src/components/Registration.jsx
-import Caraousel from "./Caraousel5";
+import React from "react";
 import RegistrationDet from "./RegistrationDet";
 
 function Registration() {
-  return (
-    <div>
-      <Caraousel />
-      <RegistrationDet />
-    </div>
-  );
+  return <RegistrationDet />;
 }
 
 export default Registration;
