@@ -69,7 +69,7 @@ function RegistrationDet() {
 
         {/* ---------------- STATUS ---------------- */}
         <div className="reg-banner">
-          🚀 Online Registration Opening Soon
+           Online Registration Opening Soon
         </div>
 
       </div>
