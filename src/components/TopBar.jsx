@@ -30,8 +30,7 @@ function TopBar() {
         </div>
         <div className="top-strip-sub">(ICMAAM 2026)</div>
         <div className="top-strip-org">
-          Organised by the Department of Mathematics &amp; Centre for Mathematical Biology and Ecology,
-          Jadavpur University
+          Organised by the Centre for Mathematical Biology and Ecology, Department of Mathematics, Jadavpur University
         </div>
       </div>
     </div>
