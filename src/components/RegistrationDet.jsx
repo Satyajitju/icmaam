@@ -6,17 +6,19 @@ function RegistrationDet() {
     <section className="section">
       <div className="container">
 
-        {/* Header */}
+        {/* -------- HEADER -------- */}
         <div className="section-header">
           <h2>Registration</h2>
           <p className="section-sub">
-            Registration details and fee structure for ICMAAM 2026.
+            Registration details for ICMAAM 2026. Please review the fee structure
+            and complete your registration through the official form.
           </p>
         </div>
 
-        {/* ---------------- FEES ---------------- */}
+        {/* -------- FEES -------- */}
         <div className="reg-grid">
 
+          {/* International */}
           <div className="reg-card">
             <h3>International Participants</h3>
             <ul>
@@ -27,6 +29,7 @@ function RegistrationDet() {
             </ul>
           </div>
 
+          {/* Indian */}
           <div className="reg-card highlight-card">
             <h3>Indian Participants</h3>
             <ul>
@@ -37,6 +40,7 @@ function RegistrationDet() {
             </ul>
           </div>
 
+          {/* JU */}
           <div className="reg-card">
             <h3>Jadavpur University</h3>
             <ul>
@@ -47,31 +51,33 @@ function RegistrationDet() {
 
         </div>
 
-        {/* ---------------- PAYMENT ---------------- */}
+        {/* -------- PAYMENT -------- */}
         <div className="reg-bank creative-bank">
           <h3>Payment Details</h3>
           <p>
-            Payment instructions and bank details will be announced shortly.
+            Bank details and payment instructions will be announced shortly.
           </p>
-          <p>
-            Please complete registration first. Payment submission will follow.
+          <p className="section-sub">
+            Please check this page regularly for updates.
           </p>
         </div>
 
-        {/* ---------------- NOTES ---------------- */}
+        {/* -------- NOTES -------- */}
         <div className="reg-notes">
           <ul>
             <li>Registration fees are not required for plenary and invited speakers.</li>
             <li>Accommodation details will be communicated separately.</li>
-            <li>Please retain payment proof for verification.</li>
+            <li>Please retain your payment receipt for verification.</li>
           </ul>
         </div>
 
-        {/* ---------------- FORM CTA ---------------- */}
-        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+        {/* -------- CTA (MAIN IMPROVEMENT) -------- */}
+        <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
+
           <p className="section-sub">
-            Complete your registration using the official form below.
+            Complete your registration using the official form.
           </p>
+
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSf5a7p6wTBzcPMdRKa077_8w5yri26YEmBD2IYgFAGn9kcrVw/viewform"
             target="_blank"
@@ -80,19 +86,22 @@ function RegistrationDet() {
           >
             Open Registration Form
           </a>
+
+          <p
+            style={{
+              marginTop: "0.8rem",
+              fontSize: "0.85rem",
+              color: "var(--text-muted)",
+            }}
+          >
+            You will be redirected to the official Google Form.
+          </p>
+
         </div>
 
-        {/* ---------------- EMBEDDED FORM ---------------- */}
-        <div className="form-embed">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSf5a7p6wTBzcPMdRKa077_8w5yri26YEmBD2IYgFAGn9kcrVw/viewform?embedded=true"
-            width="100%"
-            height="950"
-            style={{ border: "none" }}
-            title="ICMAAM Registration Form"
-          >
-            Loading…
-          </iframe>
+        {/* -------- STATUS -------- */}
+        <div className="reg-banner">
+          Registration Now Open
         </div>
 
       </div>
