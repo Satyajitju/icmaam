@@ -1570,3 +1570,11 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.form-embed {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+}
