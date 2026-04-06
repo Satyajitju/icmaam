@@ -47,14 +47,14 @@ function RegistrationDet() {
 
         </div>
 
-        {/* ---------------- PAYMENT (COMING SOON) ---------------- */}
+        {/* ---------------- PAYMENT ---------------- */}
         <div className="reg-bank creative-bank">
           <h3>Payment Details</h3>
           <p>
             Payment instructions and bank details will be announced shortly.
           </p>
           <p>
-            Please revisit this page for updates regarding payment and confirmation.
+            Please complete registration first. Payment submission will follow.
           </p>
         </div>
 
@@ -67,9 +67,32 @@ function RegistrationDet() {
           </ul>
         </div>
 
-        {/* ---------------- STATUS ---------------- */}
-        <div className="reg-banner">
-           Online Registration Opening Soon
+        {/* ---------------- FORM CTA ---------------- */}
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+          <p className="section-sub">
+            Complete your registration using the official form below.
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf5a7p6wTBzcPMdRKa077_8w5yri26YEmBD2IYgFAGn9kcrVw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            Open Registration Form
+          </a>
+        </div>
+
+        {/* ---------------- EMBEDDED FORM ---------------- */}
+        <div className="form-embed">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSf5a7p6wTBzcPMdRKa077_8w5yri26YEmBD2IYgFAGn9kcrVw/viewform?embedded=true"
+            width="100%"
+            height="950"
+            style={{ border: "none" }}
+            title="ICMAAM Registration Form"
+          >
+            Loading…
+          </iframe>
         </div>
 
       </div>
