@@ -1,4 +1,4 @@
-```jsx
+
 // src/components/RegistrationDet.jsx
 import React from "react";
 
@@ -181,4 +181,4 @@ function RegistrationDet() {
 }
 
 export default RegistrationDet;
-```
+
