@@ -66,7 +66,7 @@ function Speakers() {
 
               <div className="speaker-image-wrap">
                 <img
-                  src={speaker.Image}
+                  src={convertDriveImage(speaker.Image)}
                   alt={speaker.Name}
                   className="speaker-image"
                 />
