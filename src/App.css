@@ -1689,5 +1689,95 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+/* ===============================
+   GLOBAL PARTICIPATION NETWORK
+================================ */
+
+.global-card {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 1.4rem;
+  padding: 2rem;
+
+  border: 1px solid rgba(148, 163, 184, 0.45);
+
+  box-shadow: var(--shadow-soft);
+
+  text-align: center;
+}
+
+.global-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+
+  margin-bottom: 2rem;
+}
+
+.global-stat {
+  padding: 1.2rem;
+
+  border-radius: 1rem;
+
+  background: rgba(2, 6, 23, 0.9);
+
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.global-number {
+  font-size: 2rem;
+  font-weight: 700;
+
+  background: linear-gradient(
+    to right,
+    #6366f1,
+    #22c55e
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.global-label {
+  margin-top: 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.country-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.country-tag {
+  padding: 0.55rem 1rem;
+
+  border-radius: 999px;
+
+  background: rgba(99, 102, 241, 0.15);
+
+  border: 1px solid rgba(99, 102, 241, 0.35);
+
+  color: #c7d2fe;
+
+  font-size: 0.9rem;
+}
+
+.global-note {
+  color: var(--text-soft);
+  max-width: 700px;
+
+  margin: 0 auto 1.5rem auto;
+}
+
+@media (max-width: 768px) {
+  .global-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
