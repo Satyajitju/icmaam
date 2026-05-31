@@ -59,10 +59,10 @@ function Speakers() {
 
               <div className="speaker-image-wrap">
                 <img
-                  src={speaker.Image}
-                  alt={speaker.Name}
-                  className="speaker-image"
-                />
+  src="https://drive.google.com/uc?export=view&id=1oheN3I-p9pttXToDyNkEpgSQOx2I0sw3"
+  alt="Abba"
+  className="speaker-image"
+/>
               </div>
 
               <div className="speaker-content">
