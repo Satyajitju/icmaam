@@ -1,44 +1,145 @@
-// src/components/Speakers.jsx
-import React from "react";
+```jsx
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function Speakers() {
+  const [international, setInternational] = useState([]);
+  const [national, setNational] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://script.google.com/macros/s/AKfycbyubT2vUPqAMZIfD2Pj2Blfr2Rs2y9TNLFZF5i9ukdchFRo95Z-SI5Mc6EteGKkE4mU/exec"
+      )
+      .then((res) => {
+        const data = res.data;
+
+        setInternational(
+          data.filter(
+            (s) =>
+              s.Category === "International" &&
+              s.Status === "Confirmed"
+          )
+        );
+
+        setNational(
+          data.filter(
+            (s) =>
+              s.Category === "National" &&
+              s.Status === "Confirmed"
+          )
+        );
+      });
+  }, []);
+
   return (
     <section className="section">
       <div className="container">
-        {/* Header */}
+
         <div className="section-header">
-          <h2>Plenary &amp; Invited Speakers</h2>
+          <h2>Distinguished Invited Speakers</h2>
+
           <p className="section-sub">
-            The list of confirmed plenary and invited speakers for ICMAAM 2026
-            will be announced soon.
+            Researchers and invited speakers representing leading
+            universities and research institutes across multiple countries.
           </p>
         </div>
 
-        {/* Coming soon card */}
-        <div className="speakers-soon">
-          <div className="speakers-card">
-            <h3>Speakers to be announced</h3>
-            <p className="speakers-text">
-              The organising committee is in the process of finalising the list of
-              plenary and invited speakers. Details will be updated here once the
-              confirmations are received.
-            </p>
+        {/* INTERNATIONAL */}
 
-            <ul className="speakers-list">
-              <li>International and national experts in mathematical analysis</li>
-              <li>Researchers working on applications in modelling and simulation</li>
-              <li>Leading academics collaborating with interdisciplinary fields</li>
-            </ul>
-
-            <p className="speakers-note">
-              Please check this page again for updates. Final details will also be
-              communicated through official email and conference notices.
-            </p>
-          </div>
+        <div className="speaker-section-title">
+          International Speakers
         </div>
+
+        <div className="speaker-grid">
+
+          {international.map((speaker, index) => (
+            <div className="speaker-card" key={index}>
+
+              <div className="speaker-image-wrap">
+                <img
+                  src={speaker.Image}
+                  alt={speaker.Name}
+                  className="speaker-image"
+                />
+              </div>
+
+              <div className="speaker-content">
+
+                <h3>{speaker.Name}</h3>
+
+                <p className="speaker-title">
+                  {speaker.Title}
+                </p>
+
+                <p className="speaker-inst">
+                  {speaker.Institution}
+                </p>
+
+                <div className="speaker-country">
+                  {speaker.Country}
+                </div>
+
+              </div>
+            </div>
+          ))}
+
+        </div>
+
+        {/* NATIONAL */}
+
+        <div
+          className="speaker-section-title"
+          style={{ marginTop: "4rem" }}
+        >
+          National Speakers
+        </div>
+
+        {national.length === 0 ? (
+          <div className="speaker-coming">
+            Speaker announcements will be made periodically upon
+            confirmation by the organising committee.
+          </div>
+        ) : (
+          <div className="speaker-grid">
+            {national.map((speaker, index) => (
+              <div className="speaker-card" key={index}>
+
+                <div className="speaker-image-wrap">
+                  <img
+                    src={speaker.Image}
+                    alt={speaker.Name}
+                    className="speaker-image"
+                  />
+                </div>
+
+                <div className="speaker-content">
+
+                  <h3>{speaker.Name}</h3>
+
+                  <p className="speaker-title">
+                    {speaker.Title}
+                  </p>
+
+                  <p className="speaker-inst">
+                    {speaker.Institution}
+                  </p>
+
+                  <div className="speaker-country">
+                    {speaker.Country}
+                  </div>
+
+                </div>
+
+              </div>
+            ))}
+          </div>
+        )}
+
       </div>
     </section>
   );
 }
 
 export default Speakers;
+```
