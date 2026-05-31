@@ -31,7 +31,15 @@ function Speakers() {
         );
       });
   }, []);
+ const convertDriveImage = (url) => {
+  if (!url.includes("drive.google.com")) return url;
 
+  const match = url.match(/\/d\/([^/]+)/);
+
+  if (!match) return url;
+
+  return `https://drive.google.com/uc?id=${match[1]}`;
+};
   return (
     <section className="section">
       <div className="container">
