@@ -59,7 +59,7 @@ function Home() {
                   <div className="hero-stat-label">Days</div>
                 </div>
                 <div className="hero-stat">
-                  <div className="hero-stat-number">Update Soon</div>
+                  <div className="hero-stat-number">8</div>
                   <div className="hero-stat-label">Plenary talks</div>
                 </div>
                 <div className="hero-stat">
