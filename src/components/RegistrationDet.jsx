@@ -1,3 +1,4 @@
+```jsx
 // src/components/RegistrationDet.jsx
 import React from "react";
 
@@ -10,8 +11,8 @@ function RegistrationDet() {
         <div className="section-header">
           <h2>Registration</h2>
           <p className="section-sub">
-            Registration details for ICMAAM 2026. Please review the fee structure
-            and complete your registration through the official form.
+            Registration details for ICMAAM 2026. Participants are requested to
+            complete the payment process before submitting the registration form.
           </p>
         </div>
 
@@ -24,7 +25,7 @@ function RegistrationDet() {
             <ul>
               <li>Faculty Members <span>$200</span></li>
               <li>Faculty (Developing Countries) <span>$150</span></li>
-              <li>Students / Scholars <span>$100</span></li>
+              <li>Students / Research Scholars <span>$100</span></li>
               <li>Students (Developing Countries) <span>$75</span></li>
             </ul>
           </div>
@@ -33,49 +34,120 @@ function RegistrationDet() {
           <div className="reg-card highlight-card">
             <h3>Indian Participants</h3>
             <ul>
-              <li>Faculty (with accommodation) <span>₹8000</span></li>
-              <li>Faculty (without accommodation) <span>₹4000</span></li>
-              <li>Students (with accommodation) <span>₹6000</span></li>
-              <li>Students (without accommodation) <span>₹3000</span></li>
+              <li>Faculty Members <span>₹4000</span></li>
+              <li>Students / Research Scholars <span>₹3000</span></li>
             </ul>
           </div>
 
           {/* JU */}
           <div className="reg-card">
-            <h3>Jadavpur University</h3>
+            <h3>Jadavpur University Participants</h3>
             <ul>
-              <li>Students / Scholars <span>₹2000</span></li>
               <li>Faculty Members <span>₹3000</span></li>
+              <li>Students / Research Scholars <span>₹2000</span></li>
             </ul>
           </div>
 
         </div>
 
+        {/* -------- GST NOTICE -------- */}
+        <div className="gst-notice">
+          <strong>Important Notice</strong>
+          <br />
+          An additional <strong>18% GST</strong> is applicable on all
+          registration categories.
+          <br />
+          Accommodation charges, if required, will be collected separately in
+          offline mode during the conference.
+        </div>
+
         {/* -------- PAYMENT -------- */}
         <div className="reg-bank creative-bank">
-          <h3>Payment Details</h3>
+
+          <h3>Online Payment Portal</h3>
+
           <p>
-            Bank details and payment instructions will be announced shortly.
+            Participants may pay the registration fee securely through the
+            official Jadavpur University SBI Collect portal.
           </p>
-          <p className="section-sub">
-            Please check this page regularly for updates.
+
+          <a
+            href="https://onlinesbi.sbi.bank.in/sbicollect/icollecthome.htm?corpID=7013663&categoryName=Registration-Fee-ICMAAM-2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            Pay Registration Fee
+          </a>
+
+          <p className="payment-note">
+            After successful payment, kindly save the transaction receipt and
+            upload the payment proof while completing the registration form.
           </p>
+
+        </div>
+
+        {/* -------- REGISTRATION PROCESS -------- */}
+        <div className="registration-process">
+
+          <h3>Registration Process</h3>
+
+          <div className="process-grid">
+
+            <div className="process-step">
+              <strong>Step 1</strong>
+              <p>Pay Registration Fee</p>
+            </div>
+
+            <div className="process-step">
+              <strong>Step 2</strong>
+              <p>Save Transaction Receipt</p>
+            </div>
+
+            <div className="process-step">
+              <strong>Step 3</strong>
+              <p>Complete Registration Form</p>
+            </div>
+
+            <div className="process-step">
+              <strong>Step 4</strong>
+              <p>Receive Confirmation</p>
+            </div>
+
+          </div>
+
         </div>
 
         {/* -------- NOTES -------- */}
         <div className="reg-notes">
           <ul>
-            <li>Registration fees are not required for plenary and invited speakers.</li>
-            <li>Accommodation details will be communicated separately.</li>
-            <li>Please retain your payment receipt for verification.</li>
+            <li>
+              Registration fees are waived for plenary and invited speakers.
+            </li>
+            <li>
+              Accommodation charges are separate and payable offline.
+            </li>
+            <li>
+              An additional 18% GST is applicable on all registration fees.
+            </li>
+            <li>
+              Please retain the payment receipt for verification.
+            </li>
           </ul>
         </div>
 
-        {/* -------- CTA (MAIN IMPROVEMENT) -------- */}
-        <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
+        {/* -------- REGISTRATION FORM -------- */}
+        <div
+          style={{
+            textAlign: "center",
+            marginTop: "2.5rem",
+          }}
+        >
+          <h3>Conference Registration Form</h3>
 
           <p className="section-sub">
-            Complete your registration using the official form.
+            After completing the payment process, kindly fill out the official
+            registration form and upload the payment receipt.
           </p>
 
           <a
@@ -84,7 +156,7 @@ function RegistrationDet() {
             rel="noopener noreferrer"
             className="btn btn-primary"
           >
-            Open Registration Form
+            Complete Registration Form
           </a>
 
           <p
@@ -94,14 +166,13 @@ function RegistrationDet() {
               color: "var(--text-muted)",
             }}
           >
-            You will be redirected to the official Google Form.
+            You will be redirected to the official ICMAAM 2026 registration form.
           </p>
-
         </div>
 
         {/* -------- STATUS -------- */}
         <div className="reg-banner">
-          Registration Now Open
+          ICMAAM 2026 Registration Portal Open
         </div>
 
       </div>
@@ -110,3 +181,4 @@ function RegistrationDet() {
 }
 
 export default RegistrationDet;
+```
