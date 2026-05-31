@@ -29,10 +29,12 @@ function Speakers() {
               s.Status === "Confirmed"
           )
         );
+      })
+      .catch((err) => {
+        console.error("Error loading speakers:", err);
       });
   }, []);
- 
-};
+
   return (
     <section className="section">
       <div className="container">
@@ -59,9 +61,9 @@ function Speakers() {
 
               <div className="speaker-image-wrap">
                 <img
-                src={speaker.Image}
-                alt={speaker.Name}
-                className="speaker-image"
+                  src={speaker.Image}
+                  alt={speaker.Name}
+                  className="speaker-image"
                 />
               </div>
 
@@ -103,12 +105,13 @@ function Speakers() {
           </div>
         ) : (
           <div className="speaker-grid">
+
             {national.map((speaker, index) => (
               <div className="speaker-card" key={index}>
 
                 <div className="speaker-image-wrap">
                   <img
-                    src={convertDriveImage(speaker.Image)}
+                    src={speaker.Image}
                     alt={speaker.Name}
                     className="speaker-image"
                   />
@@ -134,6 +137,7 @@ function Speakers() {
 
               </div>
             ))}
+
           </div>
         )}
 
@@ -143,3 +147,4 @@ function Speakers() {
 }
 
 export default Speakers;
+```
