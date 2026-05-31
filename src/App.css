@@ -1578,3 +1578,117 @@ body {
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-soft);
 }
+```css
+/* ==========================================
+   REGISTRATION PAGE (ICMAAM 2026)
+========================================== */
+
+.gst-notice {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+
+  text-align: center;
+
+  border-radius: 1rem;
+
+  background: rgba(99, 102, 241, 0.12);
+
+  border: 1px solid rgba(99, 102, 241, 0.35);
+
+  color: var(--text-main);
+
+  box-shadow: var(--shadow-soft);
+}
+
+.gst-notice strong {
+  color: #c7d2fe;
+}
+
+/* Payment */
+
+.payment-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Registration Process */
+
+.registration-process {
+  margin-top: 2rem;
+
+  padding: 1.6rem;
+
+  border-radius: 1.2rem;
+
+  background: rgba(15, 23, 42, 0.96);
+
+  border: 1px solid rgba(148, 163, 184, 0.45);
+
+  box-shadow: var(--shadow-soft);
+}
+
+.registration-process h3 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+
+  text-align: center;
+}
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 1rem;
+}
+
+.process-step {
+  padding: 1rem;
+
+  border-radius: 0.9rem;
+
+  background: rgba(2, 6, 23, 0.9);
+
+  border: 1px solid rgba(148, 163, 184, 0.3);
+
+  text-align: center;
+
+  transition: transform 0.2s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-3px);
+}
+
+.process-step strong {
+  display: block;
+
+  color: #a5b4fc;
+
+  margin-bottom: 0.4rem;
+}
+
+.process-step p {
+  margin: 0;
+
+  font-size: 0.9rem;
+
+  color: var(--text-soft);
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .process-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+
