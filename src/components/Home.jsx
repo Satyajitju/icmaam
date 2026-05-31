@@ -1,3 +1,4 @@
+import GlobalParticipation from "./GlobalParticipation";
 import juGateBubbles from "../assets/juGateBubbles.png";
 import juLakeBridge from "../assets/math_dept.png";
 import juGateTaxi from "../assets/juGateTaxi.png";
@@ -78,6 +79,7 @@ function Home() {
           </aside>
         </div>
       </section>
+      <GlobalParticipation />
       {/* Auto-Scrolling Cinematic JU Gallery */}
 <section className="section">
   <div className="container">
