@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function CountdownTimer({ compact = false }) {
+function CountdownTimer() {
   const conferenceDate = new Date("2026-10-12T09:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
@@ -62,43 +62,23 @@ function CountdownTimer({ compact = false }) {
   }
 
   // FULL VERSION
+    return (
+  <div className="hero-countdown">
 
-  return (
-    <section className="countdown-section">
-      <div className="container">
+    <div className="hero-countdown-days">
+      {timeLeft.days}
+    </div>
 
-        <div className="countdown-header">
-          <h2>ICMAAM 2026 Begins In</h2>
-          <p>
-            12–14 October 2026 • Jadavpur University, Kolkata
-          </p>
-        </div>
+    <div className="hero-countdown-label">
+      DAYS REMAINING
+    </div>
 
-        <div className="countdown-grid">
+    <div className="hero-countdown-small">
+      {timeLeft.hours} Hours • {timeLeft.minutes} Minutes
+    </div>
 
-          <div className="countdown-card">
-            <span>{timeLeft.days}</span>
-            <small>Days</small>
-          </div>
-
-          <div className="countdown-card">
-            <span>{timeLeft.hours}</span>
-            <small>Hours</small>
-          </div>
-
-          <div className="countdown-card">
-            <span>{timeLeft.minutes}</span>
-            <small>Minutes</small>
-          </div>
-
-          <div className="countdown-card">
-            <span>{timeLeft.seconds}</span>
-            <small>Seconds</small>
-          </div>
-
-        </div>
-
-      </div>
+  </div>
+);
     </section>
   );
 }
