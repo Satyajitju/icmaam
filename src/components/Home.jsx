@@ -53,33 +53,33 @@ function Home() {
           </div>
 
           <aside className="hero-aside">
-            <div className="hero-glass">
-              <p className="hero-aside-label">Conference snapshot</p>
-              <CountdownTimer compact />
-              <div className="hero-stats">
-                <div className="hero-stat">
-                  <div className="hero-stat-number">3</div>
-                  <div className="hero-stat-label">Days</div>
-                </div>
-                <div className="hero-stat">
-                  <div className="hero-stat-number">8</div>
-                  <div className="hero-stat-label">Plenary talks</div>
-                </div>
-                <div className="hero-stat">
-                  <div className="hero-stat-number">500+</div>
-                  <div className="hero-stat-label">Contributions</div>
-                </div>
-              </div>
-              <ul className="hero-aside-list">
-                <li>High-quality invited and contributed talks</li>
-                <li>Special emphasis on mathematical biology &amp; epidemiology</li>
-                <li>Sessions for young scientists, early-career researchers, and students </li>
-              </ul>
-              <p className="hero-aside-foot">
-                Final statistics and highlights for the 4th edition will be updated soon.
-              </p>
-            </div>
-          </aside>
+  <div className="hero-glass">
+
+    <p className="hero-aside-label">
+      ICMAAM 2026
+    </p>
+
+    <CountdownTimer />
+
+    <p className="hero-countdown-date">
+      12–14 October 2026
+    </p>
+
+    <p className="hero-countdown-location">
+      Jadavpur University, Kolkata, India
+    </p>
+
+    <div style={{ marginTop: "1.5rem", textAlign: "center" }}>
+      <Link
+        to="/registration"
+        className="btn btn-primary"
+      >
+        Register Now
+      </Link>
+    </div>
+
+  </div>
+</aside>
         </div>
       </section>
       <GlobalParticipation />
