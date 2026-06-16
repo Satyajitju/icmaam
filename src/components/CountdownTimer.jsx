@@ -7,7 +7,6 @@ function CountdownTimer() {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0,
   });
 
   useEffect(() => {
@@ -17,7 +16,9 @@ function CountdownTimer() {
 
       if (difference > 0) {
         setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          days: Math.floor(
+            difference / (1000 * 60 * 60 * 24)
+          ),
           hours: Math.floor(
             (difference % (1000 * 60 * 60 * 24)) /
               (1000 * 60 * 60)
@@ -26,9 +27,6 @@ function CountdownTimer() {
             (difference % (1000 * 60 * 60)) /
               (1000 * 60)
           ),
-          seconds: Math.floor(
-            (difference % (1000 * 60)) / 1000
-          ),
         });
       }
     }, 1000);
@@ -36,50 +34,22 @@ function CountdownTimer() {
     return () => clearInterval(timer);
   }, []);
 
-  // COMPACT VERSION FOR HERO CARD
+  return (
+    <div className="hero-countdown">
 
-  if (compact) {
-    return (
-      <div className="hero-mini-countdown">
-
-        <div className="mini-time">
-          <strong>{timeLeft.days}</strong>
-          <span>Days</span>
-        </div>
-
-        <div className="mini-time">
-          <strong>{timeLeft.hours}</strong>
-          <span>Hours</span>
-        </div>
-
-        <div className="mini-time">
-          <strong>{timeLeft.minutes}</strong>
-          <span>Minutes</span>
-        </div>
-
+      <div className="hero-countdown-days">
+        {timeLeft.days}
       </div>
-    );
-  }
 
-  // FULL VERSION
-    return (
-  <div className="hero-countdown">
+      <div className="hero-countdown-label">
+        DAYS REMAINING
+      </div>
 
-    <div className="hero-countdown-days">
-      {timeLeft.days}
+      <div className="hero-countdown-small">
+        {timeLeft.hours} Hours • {timeLeft.minutes} Minutes
+      </div>
+
     </div>
-
-    <div className="hero-countdown-label">
-      DAYS REMAINING
-    </div>
-
-    <div className="hero-countdown-small">
-      {timeLeft.hours} Hours • {timeLeft.minutes} Minutes
-    </div>
-
-  </div>
-);
-    </section>
   );
 }
 
