@@ -1,3 +1,4 @@
+import CountdownTimer from "./CountdownTimer";
 import FeaturedSpeakers from "./FeaturedSpeakers";
 import GlobalParticipation from "./GlobalParticipation";
 import juGateBubbles from "../assets/juGateBubbles.png";
