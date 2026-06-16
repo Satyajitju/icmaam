@@ -55,6 +55,7 @@ function Home() {
           <aside className="hero-aside">
             <div className="hero-glass">
               <p className="hero-aside-label">Conference snapshot</p>
+              <CountdownTimer compact />
               <div className="hero-stats">
                 <div className="hero-stat">
                   <div className="hero-stat-number">3</div>
@@ -81,7 +82,6 @@ function Home() {
           </aside>
         </div>
       </section>
-      <CountdownTimer />
       <GlobalParticipation />
       <FeaturedSpeakers />
       {/* Auto-Scrolling Cinematic JU Gallery */}
