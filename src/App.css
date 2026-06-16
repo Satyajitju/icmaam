@@ -2058,4 +2058,33 @@ body {
   font-size: 1rem;
   letter-spacing: 1px;
 }
+.hero-mini-countdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.mini-time {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.06);
+
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.mini-time strong {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.mini-time span {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
 
