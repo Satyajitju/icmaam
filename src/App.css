@@ -1998,93 +1998,51 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* ===== Countdown ===== */
+/* ===== Hero Countdown ===== */
 
-.countdown-section {
-  padding: 4rem 1rem;
-}
-
-.countdown-header {
+.hero-countdown {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
-.countdown-header h2 {
-  font-weight: 700;
+.hero-countdown-days {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+
+  background: linear-gradient(
+    135deg,
+    #7dd3fc,
+    #34d399
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.countdown-header p {
-  color: #94a3b8;
-}
-
-.countdown-grid {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.countdown-card {
-  width: 150px;
-  height: 150px;
-
-  border-radius: 20px;
-
-  background: rgba(15, 23, 42, 0.95);
-
-  border: 1px solid rgba(99, 102, 241, 0.35);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-
-  transition: all 0.3s ease;
-}
-
-.countdown-card:hover {
-  transform: translateY(-6px);
-}
-
-.countdown-card span {
-  font-size: 2.7rem;
-  font-weight: 700;
-}
-
-.countdown-card small {
-  margin-top: 0.5rem;
+.hero-countdown-label {
+  margin-top: 0.75rem;
   font-size: 1rem;
-  letter-spacing: 1px;
-}
-.hero-mini-countdown {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin: 1rem 0 1.25rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.85;
 }
 
-.mini-time {
-  flex: 1;
+.hero-countdown-small {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+.hero-countdown-date {
   text-align: center;
-  padding: 0.75rem;
-
-  border-radius: 12px;
-
-  background: rgba(255,255,255,0.06);
-
-  border: 1px solid rgba(255,255,255,0.1);
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
-.mini-time strong {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.mini-time span {
-  font-size: 0.75rem;
+.hero-countdown-location {
+  text-align: center;
   opacity: 0.8;
+  margin-top: 0.5rem;
 }
 
