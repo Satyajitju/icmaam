@@ -1998,4 +1998,64 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ===== Countdown ===== */
+
+.countdown-section {
+  padding: 4rem 1rem;
+}
+
+.countdown-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.countdown-header h2 {
+  font-weight: 700;
+}
+
+.countdown-header p {
+  color: #94a3b8;
+}
+
+.countdown-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.countdown-card {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 20px;
+
+  background: rgba(15, 23, 42, 0.95);
+
+  border: 1px solid rgba(99, 102, 241, 0.35);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+  transition: all 0.3s ease;
+}
+
+.countdown-card:hover {
+  transform: translateY(-6px);
+}
+
+.countdown-card span {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.countdown-card small {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
 
