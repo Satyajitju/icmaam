@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function CountdownTimer() {
+function CountdownTimer({compact=false}) {
   const conferenceDate = new Date("2026-10-12T09:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState({});
