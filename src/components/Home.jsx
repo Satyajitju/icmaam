@@ -81,6 +81,7 @@ function Home() {
           </aside>
         </div>
       </section>
+      <CountdownTimer />
       <GlobalParticipation />
       <FeaturedSpeakers />
       {/* Auto-Scrolling Cinematic JU Gallery */}
