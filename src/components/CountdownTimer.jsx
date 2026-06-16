@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
 
-function CountdownTimer({compact=false}) {
+function CountdownTimer({ compact = false }) {
   const conferenceDate = new Date("2026-10-12T09:00:00").getTime();
 
-  const [timeLeft, setTimeLeft] = useState({});
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -31,6 +36,33 @@ function CountdownTimer({compact=false}) {
     return () => clearInterval(timer);
   }, []);
 
+  // COMPACT VERSION FOR HERO CARD
+
+  if (compact) {
+    return (
+      <div className="hero-mini-countdown">
+
+        <div className="mini-time">
+          <strong>{timeLeft.days}</strong>
+          <span>Days</span>
+        </div>
+
+        <div className="mini-time">
+          <strong>{timeLeft.hours}</strong>
+          <span>Hours</span>
+        </div>
+
+        <div className="mini-time">
+          <strong>{timeLeft.minutes}</strong>
+          <span>Minutes</span>
+        </div>
+
+      </div>
+    );
+  }
+
+  // FULL VERSION
+
   return (
     <section className="countdown-section">
       <div className="container">
@@ -45,22 +77,22 @@ function CountdownTimer({compact=false}) {
         <div className="countdown-grid">
 
           <div className="countdown-card">
-            <span>{timeLeft.days || 0}</span>
+            <span>{timeLeft.days}</span>
             <small>Days</small>
           </div>
 
           <div className="countdown-card">
-            <span>{timeLeft.hours || 0}</span>
+            <span>{timeLeft.hours}</span>
             <small>Hours</small>
           </div>
 
           <div className="countdown-card">
-            <span>{timeLeft.minutes || 0}</span>
+            <span>{timeLeft.minutes}</span>
             <small>Minutes</small>
           </div>
 
           <div className="countdown-card">
-            <span>{timeLeft.seconds || 0}</span>
+            <span>{timeLeft.seconds}</span>
             <small>Seconds</small>
           </div>
 
