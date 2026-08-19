@@ -758,45 +758,52 @@ body {
 
 
 /* =========================================================
-   ACCOMMODATION SECTION
+   ACCOMMODATION — PREMIUM CARD DESIGN
 ========================================================= */
 
 .registration-accommodation {
-  margin-top: 4.5rem;
-}
-
-.registration-accommodation .section-header {
-  margin-bottom: 2rem;
+  margin-top: 5rem;
 }
 
 
 /* =========================================================
-   ACCOMMODATION NOTICE
+   IMPORTANT INFORMATION
 ========================================================= */
 
 .accommodation-notice {
-  margin-bottom: 2rem;
-  padding: 1.4rem 1.6rem;
+  position: relative;
+
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem 1.7rem;
 
   border: 1px solid rgba(99, 224, 190, 0.18);
   border-left: 3px solid #63e0be;
 
-  border-radius: 14px;
+  border-radius: 16px;
 
-  background: rgba(99, 224, 190, 0.045);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(99, 224, 190, 0.055),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 
 .accommodation-notice h3 {
   margin: 0 0 0.8rem;
 
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+
   color: #f3f5f7;
 }
 
 .accommodation-notice p {
   margin: 0.55rem 0;
 
-  font-size: 0.92rem;
+  font-size: 0.93rem;
   line-height: 1.7;
 
   color: var(--text-muted, #a7b1c0);
@@ -812,24 +819,51 @@ body {
 
 
 /* =========================================================
-   GUEST HOUSE MAIN CARD
+   MAIN OASIS CARD
 ========================================================= */
 
 .guest-house-card {
-  padding: 1.8rem;
+  position: relative;
 
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 20px;
+  padding: 2rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 24px;
 
   background:
     linear-gradient(
       145deg,
-      rgba(255, 255, 255, 0.035),
-      rgba(255, 255, 255, 0.015)
+      rgba(20, 30, 45, 0.78),
+      rgba(7, 13, 24, 0.72)
     );
 
   box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.16);
+    0 25px 60px rgba(0, 0, 0, 0.25);
+
+  overflow: hidden;
+}
+
+
+/* subtle glow inside main card */
+
+.guest-house-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  top: -150px;
+  right: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(99, 224, 190, 0.06);
+
+  filter: blur(50px);
+
+  pointer-events: none;
 }
 
 
@@ -838,6 +872,9 @@ body {
 ========================================================= */
 
 .guest-house-header {
+  position: relative;
+  z-index: 1;
+
   display: flex;
 
   align-items: center;
@@ -846,20 +883,20 @@ body {
   gap: 2rem;
 
   padding-bottom: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .accommodation-label {
   display: block;
 
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.45rem;
 
   font-size: 0.68rem;
   font-weight: 700;
 
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 
   color: #63e0be;
@@ -868,67 +905,333 @@ body {
 .guest-house-header h3 {
   margin: 0;
 
-  font-size: 1.55rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 750;
 
   color: #f3f5f7;
 }
 
 .guest-house-header p {
-  margin: 0.25rem 0 0;
+  margin: 0.3rem 0 0;
 
-  font-size: 0.82rem;
+  font-size: 0.85rem;
 
-  color: var(--text-muted, #909aaa);
+  color: #929dad;
 }
 
 
 /* =========================================================
-   BOOKING CONTACT
+   BOOKING CONTACT BOX
 ========================================================= */
 
 .guest-house-contact {
-  display: flex;
+  position: relative;
+  z-index: 2;
 
+  display: flex;
   flex-direction: column;
 
   align-items: flex-end;
 
-  text-align: right;
+  padding: 0.8rem 1.1rem;
 
-  min-width: 190px;
+  border: 1px solid rgba(99, 224, 190, 0.18);
+  border-radius: 12px;
+
+  background: rgba(99, 224, 190, 0.045);
 }
 
 .guest-house-contact span {
   margin-bottom: 0.25rem;
 
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 700;
 
-  letter-spacing: 0.12em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
 
-  color: var(--text-muted, #8994a5);
+  color: #8995a6;
 }
 
 .guest-house-contact a {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
 
   color: #63e0be;
 
   text-decoration: none;
 
-  transition:
-    color 0.2s ease,
-    opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .guest-house-contact a:hover {
-  color: #7ce8ca;
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
+
+/* =========================================================
+   ROOM GRID
+========================================================= */
+
+.guest-room-grid {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.1rem;
+}
+
+
+/* =========================================================
+   ROOM CARD
+========================================================= */
+
+.guest-room-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 190px;
+
+  padding: 1.35rem 1.4rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 17px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.018)
+    );
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.guest-room-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(99, 224, 190, 0.28);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(99, 224, 190, 0.065),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.20);
+}
+
+
+/* Small top accent */
+
+.guest-room-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 1.4rem;
+  right: 1.4rem;
+
+  height: 2px;
+
+  border-radius: 0 0 4px 4px;
+
+  background: rgba(99, 224, 190, 0.45);
+
+  opacity: 0.65;
+}
+
+
+/* =========================================================
+   ROOM TITLE
+========================================================= */
+
+.guest-room-card h4 {
+  margin: 0;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  color: #f3f5f7;
+}
+
+.room-category {
+  display: inline-block;
+
+  margin-top: 0.25rem;
+
+  font-size: 0.72rem;
+  font-weight: 650;
+
+  letter-spacing: 0.04em;
+
+  color: #63e0be;
+}
+
+
+/* =========================================================
+   ROOM DETAILS
+========================================================= */
+
+.guest-room-card p {
+  margin: 0.85rem 0 1rem;
+
+  font-size: 0.82rem;
+  line-height: 1.6;
+
+  color: #9ca7b7;
+}
+
+
+/* =========================================================
+   ROOM PRICE
+========================================================= */
+
+.guest-room-card strong {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin-top: auto;
+
+  font-size: 1rem;
+  font-weight: 750;
+
+  color: #f3f5f7;
+}
+
+.guest-room-card strong::before {
+  content: "";
+
+  width: 6px;
+  height: 6px;
+
+  margin-right: 0.45rem;
+
+  border-radius: 50%;
+
+  background: #63e0be;
+}
+
+
+/* =========================================================
+   DIRECT BOOKING NOTICE
+========================================================= */
+
+.guest-booking-notice {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 0.7rem;
+
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+
+  border: 1px solid rgba(76, 91, 220, 0.14);
+  border-radius: 13px;
+
+  background: rgba(76, 91, 220, 0.055);
+
+  font-size: 0.83rem;
+  line-height: 1.6;
+
+  color: #9da8b8;
+}
+
+.guest-booking-notice strong {
+  flex-shrink: 0;
+
+  color: #f3f5f7;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .registration-accommodation {
+    margin-top: 3.5rem;
+  }
+
+  .guest-house-card {
+    padding: 1.3rem;
+  }
+
+  .guest-house-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+  }
+
+  .guest-house-contact {
+    align-items: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+  }
+
+  .guest-room-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guest-room-card {
+    min-height: auto;
+  }
+
+  .guest-booking-notice {
+    flex-direction: column;
+
+    gap: 0.3rem;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .accommodation-notice {
+    padding: 1.2rem;
+  }
+
+  .guest-house-card {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  .guest-house-header h3 {
+    font-size: 1.45rem;
+  }
+
+  .guest-room-card {
+    padding: 1.15rem;
+  }
+
+}
 
 /* =========================================================
    ROOM GRID
