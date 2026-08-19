@@ -23,7 +23,7 @@ function FeaturedSpeakers() {
       title: "Professor",
       institution: "University of Chemistry and Technology Prague",
       country: "Czech Republic",
-      image: "/František-Štěpánek.jpg,
+      image: "/František-Štěpánek.jpg",
     },
     {
       name: "David Greenhalgh",
