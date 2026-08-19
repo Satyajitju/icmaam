@@ -2046,3 +2046,45 @@ body {
   margin-top: 0.5rem;
 }
 
+/* Registration deadline */
+.registration-deadline {
+  margin: 1.5rem auto 0;
+  padding: 0.9rem 1.2rem;
+  max-width: 300px;
+  text-align: center;
+
+  border: 1px solid rgba(99, 224, 190, 0.35);
+  border-radius: 14px;
+
+  background: rgba(99, 224, 190, 0.07);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.registration-deadline-label {
+  display: block;
+  margin-bottom: 0.35rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: #63e0be;
+}
+
+.registration-deadline strong {
+  display: block;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  color: #f3f5f7;
+}
+
+/* Register button spacing */
+.hero-register-action {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
