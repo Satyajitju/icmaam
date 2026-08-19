@@ -4,13 +4,6 @@ import { Link } from "react-router-dom";
 function FeaturedSpeakers() {
   const speakers = [
     {
-      name: "Abba B. Gumel",
-      title: "Distinguished University Professor",
-      institution: "University of Maryland",
-      country: "USA",
-      image: "/gumel.jpg",
-    },
-    {
       name: "Gaston N'Guerekata",
       title: "Distinguished Professor",
       institution: "Morgan State University",
