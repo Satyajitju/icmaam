@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function FeaturedSpeakers() {
   const speakers = [
+    
     {
       name: "Gaston N'Guerekata",
       title: "Distinguished Professor",
@@ -16,6 +17,13 @@ function FeaturedSpeakers() {
       institution: "University of Franche-Comté",
       country: "France",
       image: "/raluca.png",
+    },
+    {
+      name: "Frantisek Stepanek",
+      title: "Professor",
+      institution: "University of Chemistry and Technology Prague",
+      country: "Czech Republic",
+      image: "/František-Štěpánek.jpg,
     },
     {
       name: "David Greenhalgh",
