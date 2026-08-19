@@ -695,62 +695,436 @@ body {
   text-decoration: underline;
 }
 
-/* ---- Registration page (unified with new cards) ---- */
-.registration-soon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+/* =========================================================
+   ICMAAM 2026 — REGISTRATION DEADLINE
+========================================================= */
 
-.registration-card {
-  max-width: 650px;
-  width: 100%;
-  margin-top: 2rem;
-  padding: 2rem 2.2rem;
-  border-radius: 2rem;
-  background: radial-gradient(
-      circle at 0% 0%,
-      rgba(99, 102, 241, 0.2),
-      transparent 80%
-    ),
-    rgba(5, 8, 22, 0.85);
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-strong);
-  backdrop-filter: blur(16px);
+.registration-deadline-banner {
+  position: relative;
+  margin: 0 auto 2.5rem;
+  padding: 1.25rem 1.5rem;
+
+  max-width: 720px;
+
   text-align: center;
+
+  border: 1px solid rgba(99, 224, 190, 0.35);
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(99, 224, 190, 0.08),
+      rgba(76, 91, 220, 0.06)
+    );
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.16);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.registration-card h3 {
-  margin: 0 0 1.2rem;
-  font-size: 1.5rem;
+.registration-deadline-banner .deadline-label {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: #63e0be;
 }
 
-.reg-text {
-  font-size: 1rem;
-  color: var(--text-soft);
+.registration-deadline-banner strong {
+  display: block;
+
+  font-size: 1.45rem;
+  font-weight: 750;
+
+  color: #f3f5f7;
+}
+
+.registration-deadline-banner p {
+  margin: 0.45rem 0 0;
+
+  font-size: 0.88rem;
+
+  color: var(--text-muted, #9ca8b8);
+}
+
+
+/* =========================================================
+   ACCOMMODATION SECTION
+========================================================= */
+
+.registration-accommodation {
+  margin-top: 4.5rem;
+}
+
+.registration-accommodation .section-header {
+  margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   ACCOMMODATION NOTICE
+========================================================= */
+
+.accommodation-notice {
+  margin-bottom: 2rem;
+  padding: 1.4rem 1.6rem;
+
+  border: 1px solid rgba(99, 224, 190, 0.18);
+  border-left: 3px solid #63e0be;
+
+  border-radius: 14px;
+
+  background: rgba(99, 224, 190, 0.045);
+}
+
+.accommodation-notice h3 {
+  margin: 0 0 0.8rem;
+
+  font-size: 1.05rem;
+  color: #f3f5f7;
+}
+
+.accommodation-notice p {
+  margin: 0.55rem 0;
+
+  font-size: 0.92rem;
+  line-height: 1.7;
+
+  color: var(--text-muted, #a7b1c0);
+}
+
+.accommodation-notice p:last-child {
+  margin-bottom: 0;
+}
+
+.accommodation-notice strong {
+  color: #f3f5f7;
+}
+
+
+/* =========================================================
+   GUEST HOUSE MAIN CARD
+========================================================= */
+
+.guest-house-card {
+  padding: 1.8rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   GUEST HOUSE HEADER
+========================================================= */
+
+.guest-house-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-.reg-list {
-  text-align: left;
-  margin: 0 auto 1.5rem;
-  padding-left: 1.2rem;
-  max-width: 450px;
-  color: var(--text-muted);
-  font-size: 0.95rem;
+.accommodation-label {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: #63e0be;
 }
 
-.reg-coming {
-  margin-top: 1.8rem;
-  padding: 0.8rem 1.2rem;
+.guest-house-header h3 {
+  margin: 0;
+
+  font-size: 1.55rem;
+  font-weight: 700;
+
+  color: #f3f5f7;
+}
+
+.guest-house-header p {
+  margin: 0.25rem 0 0;
+
+  font-size: 0.82rem;
+
+  color: var(--text-muted, #909aaa);
+}
+
+
+/* =========================================================
+   BOOKING CONTACT
+========================================================= */
+
+.guest-house-contact {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  text-align: right;
+
+  min-width: 190px;
+}
+
+.guest-house-contact span {
+  margin-bottom: 0.25rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: var(--text-muted, #8994a5);
+}
+
+.guest-house-contact a {
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  color: #63e0be;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.guest-house-contact a:hover {
+  color: #7ce8ca;
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   ROOM GRID
+========================================================= */
+
+.guest-room-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1rem;
+}
+
+
+/* =========================================================
+   INDIVIDUAL ROOM CARD
+========================================================= */
+
+.guest-room-card {
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 175px;
+
+  padding: 1.25rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.guest-room-card:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(99, 224, 190, 0.24);
+
+  background: rgba(99, 224, 190, 0.035);
+}
+
+.guest-room-card h4 {
+  margin: 0;
+
   font-size: 1rem;
-  border-radius: 1rem;
+  font-weight: 700;
+
+  color: #f3f5f7;
+}
+
+.room-category {
   display: inline-block;
-  background: rgba(99, 102, 241, 0.2);
-  color: #e5e7eb;
-  border: 1px solid var(--border-subtle);
-  backdrop-filter: blur(4px);
+
+  margin-top: 0.25rem;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  letter-spacing: 0.05em;
+
+  color: #63e0be;
+}
+
+.guest-room-card p {
+  margin: 0.7rem 0;
+
+  font-size: 0.82rem;
+  line-height: 1.55;
+
+  color: var(--text-muted, #929dad);
+}
+
+.guest-room-card strong {
+  margin-top: auto;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  color: #f3f5f7;
+}
+
+
+/* =========================================================
+   DIRECT BOOKING NOTICE
+========================================================= */
+
+.guest-booking-notice {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 0.65rem;
+
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+
+  border-radius: 12px;
+
+  background: rgba(76, 91, 220, 0.06);
+
+  border: 1px solid rgba(76, 91, 220, 0.12);
+
+  font-size: 0.84rem;
+  line-height: 1.6;
+
+  color: var(--text-muted, #9ba6b5);
+}
+
+.guest-booking-notice strong {
+  flex-shrink: 0;
+
+  color: #f3f5f7;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .registration-deadline-banner {
+    margin-bottom: 2rem;
+    padding: 1.1rem 1rem;
+  }
+
+  .registration-deadline-banner strong {
+    font-size: 1.25rem;
+  }
+
+  .registration-accommodation {
+    margin-top: 3.5rem;
+  }
+
+  .guest-house-card {
+    padding: 1.25rem;
+  }
+
+  .guest-house-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+  }
+
+  .guest-house-contact {
+    align-items: flex-start;
+
+    text-align: left;
+  }
+
+  .guest-room-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guest-room-card {
+    min-height: auto;
+  }
+
+  .guest-booking-notice {
+    flex-direction: column;
+
+    gap: 0.25rem;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .registration-deadline-banner .deadline-label {
+    font-size: 0.62rem;
+  }
+
+  .registration-deadline-banner strong {
+    font-size: 1.15rem;
+  }
+
+  .registration-deadline-banner p {
+    font-size: 0.8rem;
+  }
+
+  .guest-house-header h3 {
+    font-size: 1.35rem;
+  }
+
+  .guest-room-card {
+    padding: 1rem;
+  }
+
 }
 
 /* ---- Footer (more airy) ---- */
