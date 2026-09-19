@@ -28,12 +28,12 @@ function GlobalParticipation() {
           <div className="global-stats">
 
             <div className="global-stat">
-              <div className="global-number">7</div>
+              <div className="global-number">7+</div>
               <div className="global-label">Countries Confirmed</div>
             </div>
 
             <div className="global-stat">
-              <div className="global-number">8</div>
+              <div className="global-number">14+</div>
               <div className="global-label">International Speakers</div>
             </div>
 
