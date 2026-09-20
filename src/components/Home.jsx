@@ -121,11 +121,11 @@ function Home() {
               <div className="registration-deadline">
 
                 <span className="registration-deadline-label">
-                  REGISTRATION DEADLINE
+                  REGISTRATION DEADLINE 
                 </span>
 
                 <strong>
-                  20 September 2026
+                  30 September 2026
                 </strong>
 
               </div>
