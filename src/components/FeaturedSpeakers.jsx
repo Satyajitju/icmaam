@@ -5,18 +5,18 @@ function FeaturedSpeakers() {
   const speakers = [
     
     {
-      name: "Gaston N'Guerekata",
-      title: "Distinguished Professor",
-      institution: "Morgan State University",
-      country: "USA",
-      image: "/Copy of nguerekata_gaston_massey98.jpg",
+      name: "David Greenhalgh",
+      title: "Professor",
+      institution: "University of Strathclyde",
+      country: "UK",
+      image: "/David image.jpg",
     },
     {
-      name: "Raluca Eftimie",
+      name: "Igor Schreiber",
       title: "Professor",
-      institution: "University of Franche-Comté",
-      country: "France",
-      image: "/raluca.png",
+      institution: "University of Chemical Technology",
+      country: "Prague",
+      image: "/Igor.png",
     },
     {
       name: "Frantisek Stepanek",
@@ -26,11 +26,11 @@ function FeaturedSpeakers() {
       image: "/František-Štěpánek.jpg",
     },
     {
-      name: "David Greenhalgh",
+      name: "Adnan Sljoka",
       title: "Professor",
-      institution: "University of Strathclyde",
-      country: "United Kingdom",
-      image: "/David image.jpg",
+      institution: "RIKEN",
+      country: "Japan",
+      image: "/Adnan.jpeg",
     },
   ];
 
