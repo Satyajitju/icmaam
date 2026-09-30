@@ -125,7 +125,7 @@ function Home() {
                 </span>
 
                 <strong>
-                  30 September 2026
+                  05 October 2026
                 </strong>
 
               </div>
