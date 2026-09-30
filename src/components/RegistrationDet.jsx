@@ -23,11 +23,11 @@ function RegistrationDet() {
           </span>
 
           <strong>
-            20 September 2026
+            05 October 2026
           </strong>
 
           <p>
-            Registration for ICMAAM 2026 will close on 20 September 2026.
+            Registration for ICMAAM 2026 will close on 05 October 2026.
           </p>
         </div>
 
