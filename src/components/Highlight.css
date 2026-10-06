@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap");
+
+.hl {
+  --hl-ink: #0e1a3d;
+  --hl-ink-2: #16254f;
+  --hl-brass: #b08d3c;
+  --hl-brass-soft: #e6cf94;
+  --hl-paper: #f4f1ea;
+  --hl-mist: #c9d1e6;
+
+  position: relative;
+  background:
+    radial-gradient(900px 400px at 85% -10%, rgba(176, 141, 60, 0.18), transparent 60%),
+    linear-gradient(180deg, var(--hl-ink) 0%, var(--hl-ink-2) 100%);
+  color: var(--hl-paper);
+  padding: 96px 24px;
+}
+
+.hl-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* ---------- Book row ---------- */
+.hl-book-row {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.hl-book-wrap {
+  perspective: 1400px;
+  display: flex;
+  justify-content: center;
+}
+
+.hl-book {
+  position: relative;
+  width: 260px;
+  height: 360px;
+  transform: rotateY(-24deg) rotateX(4deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  filter: drop-shadow(28px 34px 30px rgba(0, 0, 0, 0.45));
+}
+
+.hl-book:hover {
+  transform: rotateY(-10deg) rotateX(2deg);
+}
+
+.hl-book-spine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 100%;
+  background: linear-gradient(90deg, #7a5f22, #a98530 60%, #8c6d2a);
+  transform-origin: left;
+  transform: rotateY(90deg) translateX(-13px);
+  border-radius: 2px 0 0 2px;
+}
+
+.hl-book-cover {
+  position: absolute;
+  inset: 0;
+  padding: 36px 28px;
+  border-radius: 3px 8px 8px 3px;
+  background: linear-gradient(135deg, #1d2f68 0%, #0f1b43 100%);
+  border: 1px solid rgba(230, 207, 148, 0.45);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hl-book-cover::before {
+  /* inner gold frame */
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(230, 207, 148, 0.35);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.hl-curves {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+  opacity: 0.85;
+}
+
+.hl-curves path {
+  fill: none;
+  stroke: var(--hl-brass-soft);
+  stroke-width: 1;
+}
+
+.hl-curves path:nth-child(2) {
+  opacity: 0.6;
+}
+
+.hl-curves path:nth-child(3) {
+  opacity: 0.35;
+}
+
+.hl-cover-conf {
+  margin: 0 0 6px;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--hl-brass-soft);
+}
+
+.hl-cover-title {
+  margin: 0 0 18px;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 2.1rem;
+  line-height: 1.05;
+  font-weight: 500;
+  color: #fff;
+}
+
+.hl-cover-meta {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--hl-mist);
+}
+
+/* ---------- Book text ---------- */
+.hl-book-text h2 {
+  margin: 0 0 18px;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  line-height: 1.12;
+  color: #fff;
+  max-width: 18ch;
+}
+
+.hl-book-text p {
+  margin: 0 0 32px;
+  max-width: 52ch;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--hl-mist);
+}
+
+.hl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hl-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.hl-btn:focus-visible {
+  outline: 3px solid var(--hl-brass-soft);
+  outline-offset: 3px;
+}
+
+.hl-btn-gold {
+  background: var(--hl-brass);
+  color: #101a3a;
+}
+
+.hl-btn-gold:hover {
+  background: var(--hl-brass-soft);
+}
+
+.hl-btn-line {
+  border: 1px solid rgba(244, 241, 234, 0.4);
+  color: var(--hl-paper);
+}
+
+.hl-btn-line:hover {
+  border-color: var(--hl-brass-soft);
+  color: var(--hl-brass-soft);
+}
+
+/* ---------- Awards ---------- */
+.hl-awards {
+  margin-top: 88px;
+  padding-top: 56px;
+  border-top: 1px solid rgba(230, 207, 148, 0.3);
+}
+
+.hl-awards-title {
+  margin: 0 0 40px;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.7rem;
+  color: var(--hl-brass-soft);
+}
+
+.hl-awards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hl-award {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  padding: 0 48px 0 0;
+}
+
+.hl-award + .hl-award {
+  padding: 0 0 0 48px;
+  border-left: 1px solid rgba(230, 207, 148, 0.3);
+}
+
+.hl-medal {
+  flex: none;
+  width: 72px;
+  height: auto;
+}
+
+.hl-award h4 {
+  margin: 4px 0 10px;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hl-award p {
+  margin: 0;
+  max-width: 40ch;
+  line-height: 1.6;
+  color: var(--hl-mist);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .hl {
+    padding: 72px 20px;
+  }
+
+  .hl-book-row {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hl-awards-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hl-award,
+  .hl-award + .hl-award {
+    padding: 0;
+    border-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hl-book,
+  .hl-btn {
+    transition: none;
+  }
+}
