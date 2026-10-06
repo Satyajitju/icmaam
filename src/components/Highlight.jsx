@@ -70,8 +70,8 @@ function Highlights() {
             <h2 id="hl-title">The ICMAAM 2026 Abstract Book is out</h2>
 
             <p>
-              Every invited talk, contributory presentation and Young
-              Scientist Symposium abstract, in one volume. Read it online or
+              Every Keynote, Plenary, invited talk, contributory presentation, Young
+              Scientist Symposium, poster presentation abstract, in one volume. Read it online or
               keep a copy for the conference days.
             </p>
 
@@ -102,8 +102,10 @@ function Highlights() {
               <div>
                 <h4>Top 3 Best Contributory Speakers</h4>
                 <p>
-                  For the most outstanding presentation across the
-                  contributory sessions.
+                  <p>
+  Recognising the three most outstanding presentations across the
+  contributory sessions.
+</p>
                 </p>
               </div>
             </article>
