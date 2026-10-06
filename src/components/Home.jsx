@@ -14,8 +14,26 @@ import juEveningWalk from "../assets/juEveningWalk.png";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const goToAbstract = (e) => {
+    e.preventDefault();
+    document
+      .getElementById("abstract-book")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <div className="home-root">
+
+      {/* =========================================================
+          TOP BANNER - jumps to the Abstract Book section
+      ========================================================= */}
+      <a href="#abstract-book" className="top-banner" onClick={goToAbstract}>
+        <span className="top-banner-badge">New</span>
+        <span className="top-banner-text">
+          The ICMAAM 2026 Abstract Book is now available. Tap to view it,
+          and see the presentation awards.
+        </span>
+      </a>
 
       {/* =========================================================
           HERO
@@ -167,7 +185,7 @@ function Home() {
       {/* =========================================================
           ICMAAM 2026 HIGHLIGHTS
           Abstract Book + Presentation Awards
-          (see Highlights.jsx and highlights.css)
+          (see Highlight.jsx and Highlight.css)
       ========================================================= */}
       <Highlights />
 
