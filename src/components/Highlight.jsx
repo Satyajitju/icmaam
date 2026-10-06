@@ -4,7 +4,7 @@ import "./Highlight.css";
   Rename your PDF to a name WITHOUT spaces and keep it in /public, e.g.
   public/Abstract_Book.pdf  ->  "/Abstract_Book.pdf"
 */
-const ABSTRACT_PDF = "/Abstract_Book.pdf";
+const ABSTRACT_PDF = "/Abstract_Book_Cover_Page%204.pdf";
 
 function Medal({ symbol }) {
   return (
