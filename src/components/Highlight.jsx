@@ -1,8 +1,7 @@
 import "./Highlight.css";
 
 /*
-  Rename your PDF to a name WITHOUT spaces and keep it in /public, e.g.
-  public/Abstract_Book.pdf  ->  "/Abstract_Book.pdf"
+  PDF lives in /public. %20 stands for the space in the file name.
 */
 const ABSTRACT_PDF = "/Abstract_Book_Cover_Page%204.pdf";
 
@@ -37,7 +36,7 @@ function Medal({ symbol }) {
 
 function Highlights() {
   return (
-    <section className="hl" aria-labelledby="hl-title">
+    <section className="hl" id="abstract-book" aria-labelledby="hl-title">
       <div className="hl-inner">
 
         {/* ================= ABSTRACT BOOK ================= */}
@@ -70,8 +69,8 @@ function Highlights() {
             <h2 id="hl-title">The ICMAAM 2026 Abstract Book is out</h2>
 
             <p>
-              Every Keynote, Plenary, invited talk, contributory presentation, Young
-              Scientist Symposium, poster presentation abstract, in one volume. Read it online or
+              Every invited talk, contributory presentation and Young
+              Scientist Symposium abstract, in one volume. Read it online or
               keep a copy for the conference days.
             </p>
 
@@ -102,10 +101,8 @@ function Highlights() {
               <div>
                 <h4>Top 3 Best Contributory Speakers</h4>
                 <p>
-                  <p>
-  Recognising the three most outstanding presentations across the
-  contributory sessions.
-</p>
+                  Recognising the three most outstanding presentations
+                  across the contributory sessions.
                 </p>
               </div>
             </article>
