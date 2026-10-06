@@ -1,4 +1,4 @@
-import "./highlights.css";
+import "./Highlight.css";
 
 /*
   Rename your PDF to a name WITHOUT spaces and keep it in /public, e.g.
