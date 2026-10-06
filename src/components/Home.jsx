@@ -121,7 +121,7 @@ function Home() {
               <div className="registration-deadline">
 
                 <span className="registration-deadline-label">
-                  REGISTRATION DEADLINE 
+                  REGISTRATION DEADLINE
                 </span>
 
                 <strong>
@@ -161,6 +161,155 @@ function Home() {
           FEATURED SPEAKERS
       ========================================================= */}
       <FeaturedSpeakers />
+
+
+      {/* =========================================================
+          ICMAAM 2026 HIGHLIGHTS
+          Abstract Book + Presentation Awards
+      ========================================================= */}
+      <section className="section icmaam-highlights">
+
+        <div className="container">
+
+          <div className="section-header">
+
+            <h2>
+              ICMAAM 2026 Highlights
+            </h2>
+
+            <p className="section-sub">
+              Latest announcements and conference highlights.
+            </p>
+
+          </div>
+
+
+          {/* =====================================================
+              OFFICIAL ABSTRACT BOOK
+          ===================================================== */}
+          <div className="abstract-book-card">
+
+            <div className="abstract-book-content">
+
+              <span className="highlight-eyebrow">
+                OFFICIAL PUBLICATION
+              </span>
+
+              <h2>
+                ICMAAM 2026 Abstract Book
+              </h2>
+
+              <p>
+                The official Abstract Book of ICMAAM 2026 is now available,
+                featuring the research contributions presented at the
+                conference.
+              </p>
+
+              <div className="highlight-actions">
+
+                <a
+                  href="/abstract_book.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Read Abstract Book
+                </a>
+
+                <a
+                  href="/Abstract_Book_Cover_Page 4.pdf"
+                  download
+                  className="btn btn-ghost"
+                >
+                  Download PDF
+                </a>
+
+              </div>
+
+            </div>
+
+            <div className="abstract-book-badge">
+              <span className="abstract-book-icon">
+                📖
+              </span>
+
+              <span>
+                Official<br />
+                Conference<br />
+                Abstract Book
+              </span>
+            </div>
+
+          </div>
+
+
+          {/* =====================================================
+              PRESENTATION AWARDS
+          ===================================================== */}
+          <div className="awards-grid">
+
+            {/* -------------------------
+                Best Contributory Speaker
+            ------------------------- */}
+            <div className="award-card">
+
+              <div className="award-icon">
+                🏆
+              </div>
+
+              <div className="award-content">
+
+                <span className="highlight-eyebrow">
+                  PRESENTATION AWARD
+                </span>
+
+                <h3>
+                  Best Contributory Speaker Award
+                </h3>
+
+                <p>
+                  Recognising outstanding performance in the contributory
+                  presentation sessions of ICMAAM 2026.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* -------------------------
+                Young Scientist Symposium
+            ------------------------- */}
+            <div className="award-card">
+
+              <div className="award-icon">
+                🏅
+              </div>
+
+              <div className="award-content">
+
+                <span className="highlight-eyebrow">
+                  YOUNG SCIENTIST SYMPOSIUM
+                </span>
+
+                <h3>
+                  Best Speaker — Young Scientist Symposium
+                </h3>
+
+                <p>
+                  Recognising an outstanding presentation delivered as part
+                  of the Young Scientist Symposium.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
 
 
       {/* =========================================================
@@ -296,9 +445,11 @@ function Home() {
               </div>
 
             </div>
+
           </div>
 
         </div>
+
       </section>
 
 
@@ -336,6 +487,7 @@ function Home() {
               </p>
 
               <ul>
+
                 <li>
                   Population dynamics and ecosystem models
                 </li>
@@ -347,6 +499,7 @@ function Home() {
                 <li>
                   Optimal control and parameter estimation
                 </li>
+
               </ul>
 
             </div>
@@ -416,6 +569,7 @@ function Home() {
           </div>
 
         </div>
+
       </section>
 
 
@@ -543,6 +697,7 @@ function Home() {
           </div>
 
         </div>
+
       </section>
 
 
