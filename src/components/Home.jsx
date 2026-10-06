@@ -1,7 +1,7 @@
 import CountdownTimer from "./CountdownTimer";
 import FeaturedSpeakers from "./FeaturedSpeakers";
 import GlobalParticipation from "./GlobalParticipation";
-import Highlights from "./Highlights";
+import Highlights from "./Highlight";
 
 import juGateBubbles from "../assets/juGateBubbles.png";
 import juLakeBridge from "../assets/math_dept.png";
