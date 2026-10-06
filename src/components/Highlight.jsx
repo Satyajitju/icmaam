@@ -100,7 +100,7 @@ function Highlights() {
             <article className="hl-award">
               <Medal symbol="∑" />
               <div>
-                <h4>Best Contributory Speaker</h4>
+                <h4>Top 3 Best Contributory Speakers</h4>
                 <p>
                   For the most outstanding presentation across the
                   contributory sessions.
