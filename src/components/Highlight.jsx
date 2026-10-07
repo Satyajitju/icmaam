@@ -3,7 +3,7 @@ import "./Highlight.css";
 /*
   PDF lives in /public. %20 stands for the space in the file name.
 */
-const ABSTRACT_PDF = "/Abstract_Book_Cover_Page%204.pdf";
+const ABSTRACT_PDF = "/Abstract_Book_Cover_Page%205.pdf";
 
 function Medal({ symbol }) {
   return (
