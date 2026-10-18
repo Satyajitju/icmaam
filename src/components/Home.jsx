@@ -10,6 +10,7 @@ import juCentralLibrary from "../assets/juCentralLibrary.png";
 import juStatueNight from "../assets/juStatueNight.png";
 import juRoadFlowers from "../assets/juRoadFlowers.png";
 import juEveningWalk from "../assets/juEveningWalk.png";
+import ConferenceMemories from "./ConferenceMemories";
 
 import { Link } from "react-router-dom";
 
