@@ -10,7 +10,7 @@ import juCentralLibrary from "../assets/juCentralLibrary.png";
 import juStatueNight from "../assets/juStatueNight.png";
 import juRoadFlowers from "../assets/juRoadFlowers.png";
 import juEveningWalk from "../assets/juEveningWalk.png";
-import ConferenceMemories from "./ConferenceMemories";
+
 
 import { Link } from "react-router-dom";
 
@@ -28,13 +28,43 @@ function Home() {
       {/* =========================================================
           TOP BANNER - jumps to the Abstract Book section
       ========================================================= */}
-      <a href="#abstract-book" className="top-banner" onClick={goToAbstract}>
-        <span className="top-banner-badge">New</span>
+      
+      {/* =========================================================
+          TOP ANNOUNCEMENT — CONFERENCE PHOTO ARCHIVE
+      ========================================================= */}
+      <a
+        href="#conference-memories"
+        className="top-banner memories-top-banner"
+        onClick={(e) => {
+          e.preventDefault();
+          document
+            .getElementById("conference-memories")
+            ?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          window.history.replaceState(
+            null,
+            "",
+            "#conference-memories"
+          );
+        }}
+      >
+        <span className="top-banner-badge memories-banner-badge">
+          NEW
+        </span>
+
         <span className="top-banner-text">
-          The ICMAAM 2026 Abstract Book is now available. Tap to view it,
-          and see the presentation awards.
+          ICMAAM 2026 Photo Gallery is now live — relive all three days
+          of the conference.
+        </span>
+
+        <span className="memories-banner-arrow" aria-hidden="true">
+          ↓ Explore
         </span>
       </a>
+
+      
 
       {/* =========================================================
           HERO
@@ -694,7 +724,7 @@ function Home() {
                 </div>
 
                 <div className="timeline-text">
-                  20 September 2026
+                  05 October 2026
                 </div>
 
               </div>
