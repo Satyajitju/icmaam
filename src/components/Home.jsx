@@ -191,6 +191,154 @@ function Home() {
 
 
       {/* =========================================================
+          ICMAAM 2026 — CONFERENCE MEMORIES
+      ========================================================= */}
+      <section className="section conference-memories">
+        <div className="container">
+
+          <div className="memories-heading">
+            <span className="memories-eyebrow">
+              ICMAAM 2026 · OFFICIAL PHOTO ARCHIVE
+            </span>
+
+            <h2>
+              Three Days. One Global
+              <span> Mathematical Community.</span>
+            </h2>
+
+            <p>
+              Revisit the conversations, scientific exchange and
+              memorable moments of the 4th International Conference
+              on Mathematical Analysis and Applications in Modelling.
+            </p>
+          </div>
+
+          <div className="memories-grid">
+
+            <a
+              className="memory-card memory-camera-one"
+              href="https://drive.google.com/drive/folders/1Ec_NRf5JCIxtyeP0W5mVcOg-p4T9jeD7"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open ICMAAM 2026 Days 1 and 2 Camera 1 photo album"
+            >
+              <div className="memory-cover">
+                <span className="memory-index">01</span>
+                <span className="memory-cover-label">
+                  THE BEGINNING
+                </span>
+                <span className="memory-cover-title">
+                  Moments<br />in Focus.
+                </span>
+                <span className="memory-cover-date">
+                  12–13 OCTOBER 2026
+                </span>
+              </div>
+
+              <div className="memory-card-body">
+                <div>
+                  <span className="memory-category">
+                    DAYS 01 &amp; 02
+                  </span>
+                  <h3>Camera 1 Collection</h3>
+                  <p>
+                    Explore the first photographic collection
+                    from the opening two days.
+                  </p>
+                </div>
+                <span className="memory-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+            </a>
+
+            <a
+              className="memory-card memory-camera-two"
+              href="https://drive.google.com/drive/folders/1jRuUQ6sJ_w1jK5RPMvMGj5Jxp3DAB3xG"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open ICMAAM 2026 Days 1 and 2 Camera 2 photo album"
+            >
+              <div className="memory-cover">
+                <span className="memory-index">02</span>
+                <span className="memory-cover-label">
+                  BEYOND THE LECTERN
+                </span>
+                <span className="memory-cover-title">
+                  Ideas Meet<br />Inspiration.
+                </span>
+                <span className="memory-cover-date">
+                  12–13 OCTOBER 2026
+                </span>
+              </div>
+
+              <div className="memory-card-body">
+                <div>
+                  <span className="memory-category">
+                    DAYS 01 &amp; 02
+                  </span>
+                  <h3>Camera 2 Collection</h3>
+                  <p>
+                    Discover another perspective on the
+                    conference and its scientific interactions.
+                  </p>
+                </div>
+                <span className="memory-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+            </a>
+
+            <a
+              className="memory-card memory-day-three"
+              href="https://drive.google.com/drive/folders/1wj_S8EREntdAF6XRXEJPAWQzGiNQeJo7"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open ICMAAM 2026 Day 3 photo album"
+            >
+              <div className="memory-cover">
+                <span className="memory-index">03</span>
+                <span className="memory-cover-label">
+                  THE FINAL CHAPTER
+                </span>
+                <span className="memory-cover-title">
+                  Memories<br />That Remain.
+                </span>
+                <span className="memory-cover-date">
+                  14 OCTOBER 2026
+                </span>
+              </div>
+
+              <div className="memory-card-body">
+                <div>
+                  <span className="memory-category">
+                    DAY 03
+                  </span>
+                  <h3>Day Three Collection</h3>
+                  <p>
+                    Revisit the final day's photographs and
+                    the closing moments of ICMAAM 2026.
+                  </p>
+                </div>
+                <span className="memory-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+            </a>
+
+          </div>
+
+          <div className="memories-footer">
+            <span>
+              4th International Conference · Jadavpur University
+            </span>
+            <span>12–14 October 2026</span>
+          </div>
+
+        </div>
+      </section>
+
+      {/* =========================================================
           JU CAMPUS GALLERY
       ========================================================= */}
       <section className="section">
